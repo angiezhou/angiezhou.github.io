@@ -22,6 +22,8 @@
 
 	<!-- HEADER -->
 	<header>
+		<div class="headercontainer">
+
 		<nav class="subnavi">
 			<nav id="clubtrustylogin">
 		<a href="#"><img src="imgs/subnavi_clubtrusty.png" alt="..."></a>
@@ -31,21 +33,22 @@
 		<img src="imgs/subnavi_bar.png" alt="...">
 		<select id="language">
 			<option value="ENG">ENG</option>
-			<option value="CHN">CHN</option>
-			<option value="KRE">KRE</option>
+			<option value="CHN_SP">中文</option>
+			<option value="KRE ">한국어</option>
 	</select>
 </nav>
 		</nav>
 	<nav class="gnavi">
 		<table class="gnavi" width=100%>
 			<tr>
-<td width="26%"><center><a href="#">ご宿泊<br><span>ROOMS</span></a></center></td>
+<td width="26%"><center><a href="roomdetail.html">ご宿泊<br><span>ROOMS</span></a></center></td>
 <td width="25%"><center><a href="#">レストラン&バー<br><span>RESTAURANT</span></a></center></td>
 <td width="25%"><center><a href="#">スペシャル<br><span>SPECIAL OFFERS</span></a></center></td>
 <td width="25%"><center><a href="#">アクセス<br><span>MAP / ACCESS</span></a></center></td>
 </tr>
 </table>
 	</nav>
+</div>
 	</header>
 	<!-- LOGO HOME BTN -->
 
@@ -124,45 +127,41 @@
 
 
 	<!-- CHECK-IN -->
-	<div id="check-in">
+	<div class="check-in-out">
 
 		<h3>ご宿泊日 CHECK IN</h3>
 
-		<select id="check-in-date">
-			<option value="20150507">2015年5月07日</option>
-			<option value="20150507">2015年5月08日</option>
-			<option value="20150509">2015年5月09日</option>
+		<select class="date-selector">
+			<option value="20150507">2015年5月<span class="day">07</span>日</option>
+			<option value="20150507">2015年5月<span class="day">08</span>日</option>
+			<option value="20150509">2015年5月<span class="day">09</span>日</option>
 
 </select>
 
-<a href="#"><img src="imgs/arrow_down.png" alt="..." class="arrow_down"></a>
 <a href="#"><img src="imgs/btn_calendar.png" alt="..." class="btn_calendar"></a>
 	</div>
 
 	<!-- CHECK-OUT -->
-	<div id="check-out">
+	<div class="check-in-out">
 
 		<h3>ご出発日 CHECK OUT</h3>
 
-		<select id="check-out-date">
+		<select class="date-selector">
 			<option value="20150507">2015年5月07日</option>
 			<option value="20150507">2015年5月08日</option>
 			<option value="20150509">2015年5月09日</option>
 
 </select>
 
-<a href="#"><img src="imgs/arrow_down.png" alt="..." class="arrow_down"></a>
 <a href="#"><img src="imgs/btn_calendar.png" alt="..." class="btn_calendar"></a>
 	</div>
 
 	<!-- NO. OF GUESTS-->
 	<div id="guestno">
 
-		<h3>ご宿泊人数 GUESTS</h3>
+		<h3>ご宿泊人数 GUEST</h3>
 		<a href="#"><img src="imgs/arrow_left.png" alt="..." class="arrow_left"></a>
 <h2>2</h2>
-
-
 <a href="#"><img src="imgs/arrow_right.png" alt="..." class="arrow_right"></a>
 
 	</div>
@@ -180,12 +179,12 @@
 	<!-- FILTER-->
 	<div id="filter">
 		<h3>検索方法 FILTER</h3>
-		<div id="byplan">
+	<a href="#">	<div class="byplan">
 		<h5>宿泊プラン別</h5>
-	</div>
-	<div id="byroom">
+	</div></a>
+<a href="#">	<div class="byroom">
 		<h5>部屋タイプ別</h5>
-	</div>
+	</div></a>
 	</div>
 	<!-- RESERVEBTN-->
 	<a href="#"><div id="reservebtn">
@@ -213,7 +212,7 @@
 			<h1>お知らせ/ INFORMATION</h1>
 				</div>
 		</td>
-		<td width="9%"><a href="#">一覧へ »</a></td>
+		<td width="9%"><a href="#" class="textlink">一覧へ »</a></td>
 	</tr>
 </table>
 
@@ -229,7 +228,7 @@
 		</div>
 		</td>
 		<td width="75%">
-			<a href="#">改修工事が終了しましたので2月1日からは通常営業に戻ります。</a>
+			<a href="#" class="textlink">改修工事が終了しましたので2月1日からは通常営業に戻ります。</a>
 		</td>
 	</tr>
 	<!-- NEWS02 -->
@@ -240,7 +239,7 @@
 		</div>
 		</td>
 		<td width="75%">
-			<a href="#">ランチタイム営業再開のご案内 期間限定で特典もご用意させていただきました。</a>
+			<a href="#" class="textlink">ランチタイム営業再開のご案内 期間限定で特典もご用意させていただきました。</a>
 		</td>
 	</tr>
 	<!-- NEWS03 -->
@@ -251,7 +250,7 @@
 		</div>
 		</td>
 		<td width="75%">
-			<a href="#">2014年4月1日より、無料送迎シャトルバス夜便の時刻、ルートが変わります。</a>
+			<a href="#" class="textlink">2014年4月1日より、無料送迎シャトルバス夜便の時刻、ルートが変わります。</a>
 		</td>
 	</tr>
 	<!-- NEWS04 -->
@@ -262,7 +261,7 @@
 		</div>
 		</td>
 		<td width="75%">
-			<a href="#">ホームページからのご予約がお得 ワンドリンクサービス付き！(お一人様1ドリンク)</a>
+			<a href="#" class="textlink">ホームページからのご予約がお得 ワンドリンクサービス付き！(お一人様1ドリンク)</a>
 		</td>
 	</tr>
 	<!-- NEWS05 -->
@@ -273,7 +272,7 @@
 		</div>
 		</td>
 		<td width="75%">
-			<a href="#">年始シャトルバスのご案内—１月３日（金）より通常通り運行致します。</a>
+			<a href="#" class="textlink">年始シャトルバスのご案内—１月３日（金）より通常通り運行致します。</a>
 		</td>
 	</tr>
 
@@ -322,7 +321,7 @@
 			<td width="68%">
 				<h2>Club Trusty</h2>
 			</td>
-			<td width="32%"><a href="#">詳しくはこちら »</a></td>
+			<td width="32%"><a href="#" class="textlink">詳しくはこちら »</a></td>
 		</tr>
 	</table>
 
@@ -344,21 +343,23 @@
 <!-- FOOTER -->
 
 <footer>
+	<div class="footercontainer">
+		<hr>
 	<div id="footercol01">
 	<h3>HOTEL TRUSTY GROUP 総合トップ</h3>
 	<table id="hotellist" width="100%">
 		<tr>
 			<td width="50%">
 				<ul>
-					<li><a href="#">神戸____旧居留地</a></li>
-					<li><a href="#">トラスティ心斎橋</a></li>
-					<li><a href="#">トラスティ名古屋</a></li>
+					<li><a href="#" class="textlink">神戸____旧居留地</a></li>
+					<li><a href="#" class="textlink">トラスティ心斎橋</a></li>
+					<li><a href="#" class="textlink">トラスティ名古屋</a></li>
 				</ul></td>
 				<td width="50%">
 					<ul>
-						<li><a href="#">金沢_____香林坊</a></li>
-						<li><a href="#">名古屋 ______栄</a></li>
-						<li><a href="#">大阪 ____阿部野</a></li>
+						<li><a href="#" class="textlink">金沢_____香林坊</a></li>
+						<li><a href="#" class="textlink">名古屋 ______栄</a></li>
+						<li><a href="#" class="textlink">大阪 ____阿部野</a></li>
 					</ul></td>
 		</tr>
 	</table>
@@ -371,21 +372,22 @@
 	<div id="phonenumber">
 		<h3>予約電話(代表): 03 - 6700 - 0001</h3>
 	</div>
-	<table id="footerlinks" width="100%">
+	<table class="footerlinks" width="100%">
 		<tr>
-			<td width="37%"><a href="#">会社情報</a></td>
-			<td width="38%"><a href="#">採用情報</a></td>
-			<td width="40%"><a href="#">よくある質問</a></td>
+			<td width="37%"><a href="#" class="textlink">会社情報</a></td>
+			<td width="38%"><a href="#" class="textlink">採用情報</a></td>
+			<td width="40%"><a href="#" class="textlink">よくある質問</a></td>
 		</tr>
 	</table>
-	<table id="footerlinks_line2" width="100%">
+	<table class="footerlinks" width="100%">
 		<tr>
-			<td width="30%"><a href="#">ご利用規約</a></td>
-			<td width="45%"><a href="#">プライバシポリシー</a></td>
-			<td width="30%"><a href="#">サイトマップ</a></td>
+			<td width="30%"><a href="#" class="textlink">ご利用規約</a></td>
+			<td width="45%"><a href="#" class="textlink">プライバシポリシー</a></td>
+			<td width="30%"><a href="#" class="textlink">サイトマップ</a></td>
 		</tr>
 	</table>
 <p>東京ベイサイド 〒135-0063 東京都江東区有明3-1-15</p>
+</div>
 </div>
 
 </footer>

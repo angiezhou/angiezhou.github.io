@@ -1,15 +1,33 @@
 body{
 	margin:auto;
 	width:1150px;
-	background-image: url("imgs/bg.png");
-	background-size: 1150px 1926px;
-	background-repeat: no-repeat;
-	background-position: top;
 }
-.gnavi a:hover,.block01 a:hover{ text-decoration: none;
+.gnavi a:hover{ text-decoration: none;
+	color:#ffffff;
+	width:160px;
+	height:52px;
+	border-bottom: solid 1px #736e5e;
+	border-top: solid 1px #736e5e;
+	display:block;
+}
+.block01 a:hover{ text-decoration: none;
 	color:#ffffff;
 
 }
+.selected{
+	text-decoration: none;
+	width:160px;
+	height:52px;
+	border-bottom: solid 1px #736e5e;
+	border-top: solid 1px #736e5e;
+	display:block;
+	}
+.textlink{
+	color:#736e5e;
+	text-decoration: underline;
+	font-size:12px;
+}
+
 footer a:hover{
 	text-decoration: underline;
 		color:#ffffff;
@@ -17,7 +35,7 @@ footer a:hover{
 }
 /*TITLE SETTING*/
 
-.title h1{
+.title h1,.title{
 	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
 font-size: 18px;
 /*font-style:oblique;*/
@@ -25,12 +43,33 @@ color: #3e4570;
 letter-spacing: 1.2px;
 }
 
+/* HEADER */
+
+header{
+	width:1150px;
+	height:245px;
+	background-image: url("imgs/header.jpg");
+}
+.headercontainer{
+	padding-top:7px;
+}
+#language{
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
+	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: none;
+	-webkit-appearance:none;
+	color:#736e5e;
+	background: url(imgs/selectlang.png) right 50% no-repeat;
+	width:50px;
+	margin-left:10px;
+}
 
 /*LOGO*/
 #home-link{
 	position: absolute;
 	top:12px;
-	left:400px;
+	left:395px;
 	width:342px;
 	height:130px;
 	background-color:transparent;
@@ -47,7 +86,7 @@ letter-spacing: 1.2px;
 /*GNAVI*/
 .gnavi{
  margin-left:45px;
-	margin-top:112px;
+	margin-top:110px;
 	width:960px;
 
 }
@@ -69,7 +108,7 @@ letter-spacing: 1.2px;
 
 /*TOP IMAGE*/
 #topimg{
-	margin-top: 32px;
+	margin-top: 0px;
 	height:495px
 }
 .carousel-indicators li {
@@ -96,7 +135,7 @@ letter-spacing: 1.2px;
 
 
 .block01{
-	margin-top:65px;
+	margin-top:80px;
 }
 
 
@@ -116,62 +155,81 @@ letter-spacing: 1.2px;
 }
 /*RESERVATIONS*/
 #reservation{
-	margin-top: 0px;
 	margin-left: 754px;
 	width:295px;
 }
-#check-in{
+.check-in-out{
 	height:80px;
 	width:295px;
+	background-color: #f5f3ef;
+	margin-top:10px;
 }
-#check-out{
-	height:80px;
-	width:295px;
-	margin-top:-10px;
+.date-selector{
+	margin-left:15px;
+	margin-top:5px;
+	float:left;
 }
 #guestno{
+	margin-top:10px;
 	height:80px;
 	width:144px;
-	margin-top:-15px;
+	background-color: #f5f3ef;
 	float:left;
 }
 
 #roomno{
+	margin-top:10px;
 	height:80px;
 	width:144px;
-	margin-top:-15px;
 	margin-left: 154px;
+	background-color: #f5f3ef;
 }
 #filter{
 	height:80px;
-	margin-top:-15px;
+	margin-top:10px;
+	background-color: #f5f3ef;
 }
 
-#check-in-date{
-	margin-left:15px;
-	margin-top:5px;
-	float:left;
-}
-#check-out-date{
-	margin-left:15px;
-	margin-top:5px;
-	float:left;
-}
-#byplan{
+
+
+.byplan{
 	float:left;
 	margin-left:15px;
 	width:120px;
 	height:32px;
 	background-color: #ffffff;
 	border: solid 2px #530d0d;
+	color:#530d0d;
 
 }
 
-#byroom{
+.byplan:active{
+	float:left;
+	margin-left:15px;
+	width:120px;
+	height:32px;
+	background-color: #ffffff;
+	border: solid 2px #530d0d;
+	color:#530d0d;
+
+}
+
+.byroom{
 	margin-left:150px;
 	width:120px;
 	height:32px;
 	background-color: #b0ada2;
+	color: #f5f3ef;
+
+}
+.byroom:active{
+	font-size: 12px;
+	margin-left:150px;
+	width:120px;
+	height:32px;
+	background-color: #ffffff;
+	border: solid 2px #530d0d;
+	color:#530d0d;
 
 }
 
@@ -179,7 +237,7 @@ letter-spacing: 1.2px;
 	display:block;
 	width:294px;
 	height:60px;
-	margin-top:-20px;
+	margin-top:10px;
 	background-color:#530d0d;
 
 }
@@ -208,6 +266,20 @@ letter-spacing: 1.2px;
 	width:20px;
 	float:left;
 }
+/* RESERVATION SELECTOR */
+#reservation select{
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
+	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: transparent;
+	border: none;
+	-webkit-appearance:none;
+	color:#530d0d;
+	background: url(imgs/arrow_down.png) right 100% no-repeat;
+	width:130px;
+	margin-right:10px;
+	height:20px;
+}
 
 /*RESERVATIONS-FONT SETTINGS*/
 
@@ -235,25 +307,24 @@ padding-top:18px;
 	font-size: 12px;
 	color: #736e5e;
 	margin-left: 15px;
-	margin-top: 25px;
-}
+	margin-top:0px;
+	padding-top:11px;
+	}
 
 
-#byplan h5{
+.byplan h5{
 	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
 	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color: #736e5e;
 	margin-left: 21px;
 	margin-top: 8px;
 	float:left;
 
 }
-#byroom h5{
+.byroom h5{
 	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
 	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color: #f5f3ef;
 	margin-left: 23px;
 	margin-top: 10px;
 	float:left;
@@ -262,7 +333,7 @@ padding-top:18px;
 
 
 .block02{
-	margin-top:60px;
+	margin-top:80px;
 
 }
 /*NEWS*/
@@ -304,12 +375,7 @@ padding-top:18px;
 	padding-left: 7px;
 	padding-top: 5px;
 }
-#news a{
-	color:#736e6e;
-	text-decoration: underline;
-	font-size:12px;
-	letter-spacing: 1.2px;
-}
+
 
 /*OTHER INFO*/
 #otherinfo{
@@ -385,23 +451,30 @@ margin-top:18px;
 	letter-spacing: 1.2px;
 	width:140px;
 }
-#clubtrustytitle a{
-	color:#736e6e;
-	text-decoration: underline;
-	font-size:12px;
-}
 
 /*FOOTER*/
 
 footer{
-	margin-top:160px;
+	margin-top:90px;
 	width:1150px;
-	height:163px;
-	margin-left:100px;
+	height:262px;
+	background-image: url("imgs/bg.jpg");
+	background-repeat:repeat-y;
+}
+footer hr{
+	color:#736e5e;
+	width:946px;
+	margin-left:0px;
+	margin-bottom:55px;
+
 }
 footer ul li{
 	list-style:square;
 margin-top:5px;
+}
+.footercontainer{padding-top:35px;
+	padding-left:100px;
+
 }
 #footercol01{
 	float:left;
@@ -413,7 +486,7 @@ margin-top:5px;
 	margin-left:-25px;
 }
 #footercol02{
-	margin-left:50px;
+	margin-left:56px;
 	width:300px;
 	float:left;
 }
@@ -421,13 +494,17 @@ margin-top:5px;
 	float:left;
 	width:295px;
 	margin-top:-20px;
+	margin-left:6px;
 }
 #logo_s{
-	padding-left:32px;
+	padding-left:5px;
 	margin-top:-5px;
 }
+footer small{
+	margin-left:-25px;
+}
 
-#footerlinks,#footerlinks_line2{
+.footerlinks{
 	width:295px;
 	height:30px;
 }
@@ -440,11 +517,7 @@ footer h3{
 	font-size: 12px;
 	color: #ffffff;
 }
-footer a{
-	color:#736e6e;
-	text-decoration: underline;
-	font-size:12px;
-}
+
 #footercol03 p{
 	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
 	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
@@ -460,3 +533,139 @@ footer a{
 	letter-spacing: -0.2px;
 	margin-left:74px;
 }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////ROOMDETAILS////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* THUMBNAIL */
+.thumbnails{
+	widht:960px;
+	margin-left:102px;
+	background-image: url('imgs/tbn_frame.png');
+	margin-top:60px;
+	height:218px;
+	background-repeat:no-repeat;
+
+
+}
+.thumbnails ul{
+	margin-left:-51px;
+	padding-top:14px;
+}
+.thumbnails li{
+	list-style: none;
+float:left;
+margin-left:25px;
+}
+.tbn_01{
+	background-image:url('imgs/tbn_01.jpg');
+	width:286px;
+	height:185px;
+}
+.tbn_02{
+	background-image:url('imgs/tbn_02.jpg');
+	width:286px;
+	height:185px;
+}
+.tbn_03{
+	background-image:url('imgs/tbn_03.jpg');
+	width:286px;
+	height:185px;
+}
+.tbn_off{
+	border: solid 1px rgba(164,160,160,0.8);
+	background-color: rgba(164,160,160,0.4);
+	width:262px;
+	height:160px;
+	display: block;
+	margin-top:12px;
+	margin-left:12px;
+}
+.tbn_off:hover{
+	border: solid 1px rgba(164,160,160,0.8);
+	background-color: transparent;
+	width:262px;
+	height:160px;
+	display: block;
+	margin-top:12px;
+	margin-left:12px;
+}
+
+.tbn_on{
+	border: solid 1px rgba(164,160,160,0.8);
+	width:262px;
+	height:160px;
+	display: block;
+	margin-top:12px;
+	margin-left:12px;
+}
+/* PAGETITLE */
+.pagetitle{
+margin-left:100px;
+margin-top:60px;
+width:530px;
+float: left;
+}
+
+/* PAGETITLE TYPE SETTING */
+.dp_title{
+	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
+font-size: 36px;
+color: #530d0d;
+letter-spacing: 1.2px;
+margin-bottom:10px;
+
+}
+.dp_caption{
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
+	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #b0ada2;
+	letter-spacing: 0.2px;
+}
+
+/* PRICE */
+.price{
+	margin-top:100px;
+	margin-left:615px;
+
+}
+
+.price li{
+	width:190px;
+	height:25px;
+	margin-left:2px;
+	float:left;
+	list-style: none;
+	background-color: #f5f3ef;
+}
+#pricetable{
+	margin-left:85px;
+	width:300px;
+	margin-top:-50px;
+}
+.price_vbar{
+	float:left;
+}
+
+/* PRICE TYPE SETTING */
+
+.dp_priceinfo{
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
+	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #3e4570;
+	letter-spacing: 0.2px;
+	margin-top:5px;
+	margin-left:75px;
+
+}
+.roomprice{
+	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
+font-size: 22px;
+font-style:italic;
+color: #530d0d;
+letter-spacing: 1.2px;
+
+}
+.price01{float:left;}
