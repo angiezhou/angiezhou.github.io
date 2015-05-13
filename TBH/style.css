@@ -92,7 +92,22 @@ header{
  margin-left:45px;
 	margin-top:110px;
 	width:960px;
-
+}
+.gnavi ul{
+	margin-left:35px;
+	width:960px;
+}
+.gnavi li{
+	list-style: none;
+	float:left;
+	width:200px;
+	margin-left:36px;
+}
+.gnavi li:first-child{
+	list-style: none;
+	float:left;
+	width:200px;
+	margin-left:0px;
 }
 .gnavi a{
 	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
@@ -125,9 +140,14 @@ footer hr{
 	margin-bottom:55px;
 
 }
-footer ul li{
+.hotellist{
 	list-style:square;
-margin-top:5px;
+	float:left;
+	margin-left:-25px;
+	margin-top:12px;
+}
+.hotellist_names{
+	margin-left:50px;
 }
 .footercontainer{padding-top:35px;
 	padding-left:100px;
@@ -162,10 +182,30 @@ footer small{
 }
 
 .footerlinks{
-	width:295px;
-	height:30px;
-}
+	list-style: none;
+	width:400px;
+	float:none;
+	margin-left:-55px;
+	margin-top:-8px;
 
+}
+.footerlinks li{
+	float:left;
+	margin-left:17px;
+	width:110px;
+	text-align: center;
+}
+.footerlinks li:first-child{
+	width:70px;
+	text-align: left;
+}
+.footerlinks li:last-child{
+	width:80px;
+	text-align: right;
+}
+.footer_add{
+	margin-top:-5px;
+}
 /*FOOTER TYPE SETTING*/
 
 footer h3{
@@ -180,7 +220,7 @@ footer h3{
 	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #736e6e;
-	letter-spacing: -0.2px;
+	letter-spacing: -0.1px;
 }
 #footercol03 h3{
 	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
@@ -603,6 +643,9 @@ margin-left:25px;
 	margin-left:12px;
 }
 /* PAGETITLE */
+.roomdetail_title{
+	margin-bottom:150px;
+}
 .pagetitle{
 margin-left:100px;
 margin-top:60px;
@@ -628,28 +671,38 @@ margin-bottom:10px;
 }
 
 /* PRICE */
-.price{
+#pricetable{
 	margin-top:100px;
-	margin-left:615px;
-
+float:left;
 }
 
-.price li{
+.price_guest li{
 	width:190px;
 	height:25px;
 	margin-left:2px;
-	margin-bottom:12px;
+	margin-bottom: 12px;
 	float:left;
 	list-style: none;
 	background-color: #f5f3ef;
 }
-#pricetable{
-	margin-left:68px;
-	width:300px;
-}
-.price_vbar{
+
+.price li{
+	margin-bottom: 20px;
+	width:190px;
+	height:25px;
 	float:left;
+	list-style: none;
 }
+.price li:first-child{
+	margin-bottom: 20px;
+	margin-left:4px;
+	width:190px;
+	height:25px;
+	float:left;
+	list-style: none;
+	border-right: solid 1px #530d0d;
+}
+
 
 /* PRICE TYPE SETTING */
 
@@ -765,19 +818,26 @@ width:295px;
 	width:295px;
 	height:36px;
 	margin-bottom:38px;
+	background-image: url('imgs/roomdetail_vbar.jpg');
+	background-position: 100px 5px;
+	background-repeat: no-repeat;
 }
-.roomspecs table{
-	width:100%;
-}
-/* ROOMDETAILS TYPE SETTING */
-.dp_roomspec{
+.roomspecs dt{
+	float:left;
 	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
 	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #3e4570;
-	margin-top:10px;
-	text-align: center;
+	font-weight: lighter;
+margin-top: 5px;
+width: 100px;
+text-align: center;
 }
+.roomspecs dl{
+	text-align: center;
+margin-top: 5px;
+}
+/* ROOMDETAILS TYPE SETTING */
 
 /* ROOMPLAN */
 .roomplan{
@@ -812,6 +872,13 @@ padding-top:50px;
 	list-style:none;
 	margin-bottom: 20px;
 
+}
+.as_table li:before{
+	content:"-";
+	float:left;
+	margin-top:-2px;
+	margin-right:2px;
+	color:#530d0d;
 }
 /* AMENITY&SERVICE TYPE SETTING */
 
@@ -1006,6 +1073,14 @@ padding-top:12px;
 	margin-left:24px;
 	float:left;
 	width:440px;
+}
+.reco_events a:before{
+	content:"-";
+	font-size:22px;
+	color:#530d0d;
+	float:left;
+	margin-top:68px;
+	margin-left:5px;
 }
 /* RECOMMENDATIONS TYPE SETTING*/
 .reco_frame p{

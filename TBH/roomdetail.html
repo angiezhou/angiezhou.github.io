@@ -38,16 +38,16 @@
 	</select>
 </nav>
 		</nav>
-	<nav class="gnavi">
-		<table class="gnavi" width=100%>
-			<tr>
-<td width="26%"><center><a  class="selected" href="roomdetail.html">ご宿泊<br><span>ROOMS</span></a></center></td>
-<td width="25%"><center><a href="#">レストラン&バー<br><span>RESTAURANT</span></a></center></td>
-<td width="25%"><center><a href="#">スペシャル<br><span>SPECIAL OFFERS</span></a></center></td>
-<td width="25%"><center><a href="#">アクセス<br><span>MAP / ACCESS</span></a></center></td>
-</tr>
-</table>
-	</nav>
+		<nav class="gnavi">
+	<ul>
+
+	<li><center><a href="roomdetail.html">ご宿泊<br><span>ROOMS</span></a></center></li>
+	<li><center><a href="#">レストラン&バー<br><span>RESTAURANT</span></a></center></li>
+	<li><center><a href="#">スペシャル<br><span>SPECIAL OFFERS</span></a></center></li>
+	<li><center><a href="#">アクセス<br><span>MAP / ACCESS</span></a></center></li>
+
+	</ul>
+		</nav>
 </div>
 	</header>
 	<!-- LOGO HOME BTN -->
@@ -114,16 +114,17 @@
 	</ul>
 </div>
 <!-- BLOCK01-PAGETITLE -->
-<div class="pagetitle">
+<div class="roomdetail_title">
 
+<div class="pagetitle">
 	<a href="#"><p class="textlink">ホーム » ご宿泊 » 客室紹介 » スイトルーム</p></a>
 	<h1 class="dp_title">スイトルーム / SUIT ROOM</h1>
 	<p class="dp_caption">ご自分へのちょっとしたご褒美にぴったりお部屋で「上質なお時間」を味わっていただけます。</p>
-
 </div>
+
 <!-- ROOMPRICE -->
-<div class="price">
-	<ul>
+<div id="pricetable">
+	<ul class="price_guest">
 		<li>
 			<p class="dp_priceinfo">お一人様</p>
 		</li>
@@ -132,14 +133,15 @@
 		</li>
 	</ul>
 
-<table width="100%" id="pricetable">
-	<tr>
-		<td width="55%"><h1 class="roomprice">¥ 48,004</h1></td>
-		<td width="10%"><img src="imgs/roomdetail_vbar.jpg" alt="..."></td>
-		<td width="40%"><h1 class="roomprice">¥ 53,519</h1></td>
-	</tr>
-</table>
+<ul class="price">
+
+		<li><h1 class="roomprice">¥ 48,004</h1></li>
+		<li><h1 class="roomprice">¥ 53,519</h1></li>
+
+</ul>
 </div>
+</div>
+<br>
 <!-- BLOCK02 -->
 <div class="block02">
 
@@ -196,60 +198,34 @@
 		<h2 class="title">部屋スペック / ROOM SPECS</h2>
 <ul>
 	<li>
-		<table class="roomspecstable">
-			<tr>
-				<td width="35%">
-					<p class="dp_roomspec">広さ</p>
-				</td>
-				<td width="1%">
-					<img src="imgs/roomdetail_vbar.jpg" alt="...">
-				</td>
-				<td>
-					<h2 class="roomprice">54m<span class="m2">2</span></h2>
-				</tr>
-				</table>
+		<dl>
+		<dt>広さ</dt>
+					<dd><h2 class="roomprice">54m<span class="m2">2</span></h2></dd>
+				</dl>
 				</li>
 				<li>
-					<table class="roomspecstable">
-						<tr>
-							<td width="35%">
-								<p class="dp_roomspec">ベッド</p>
-							</td>
-							<td width="1%">
-								<img src="imgs/roomdetail_vbar.jpg" alt="...">
-							</td>
-							<td>
-								<h2 class="roomprice">160 x 200 cm</h2>
-							</tr>
-							</table>
+					<dl>
+
+								<dt>ベッドサイズ</dt>
+								<dd><h2 class="roomprice">160 x 200 cm</h2></dd>
+
+							</dl>
 							</li>
 							<li>
-								<table class="roomspecstable">
-									<tr>
-										<td width="35%">
-											<p class="dp_roomspec">チェックイン</p>
-										</td>
-										<td width="1%">
-											<img src="imgs/roomdetail_vbar.jpg" alt="...">
-										</td>
-										<td>
-											<h2 class="roomprice">15:00</h2>
-										</tr>
-										</table>
+								<dl>
+
+											<dt>チェックイン</dt>
+											<dd><h2 class="roomprice">15:00</h2></dd>
+
+										</dl>
 										</li>
 										<li>
-											<table class="roomspecstable">
-												<tr>
-													<td width="35%">
-														<p class="dp_roomspec">チェックアウト</p>
-													</td>
-													<td width="1%">
-														<img src="imgs/roomdetail_vbar.jpg" alt="...">
-													</td>
-													<td>
-														<h2 class="roomprice">10:00</h2>
-													</tr>
-													</table>
+											<dl>
+
+														<dt>チェックアウト</dt>
+														<dd><h2 class="roomprice">10:00</h2></dd>
+
+													</dl>
 													</li>
 </ul>
 
@@ -270,38 +246,38 @@
 		<tr>
 			<td>
 		<ul>
-			<li><p class="as_info">- ワッシュレット</p></li>
-			<li><p class="as_info">- シャワーブース</p></li>
-			<li><p class="as_info">- シャンプー</p></li>
-			<li><p class="as_info">- コンディショナー</p></li>
-			<li><p class="as_info">- ブラシ</p></li>
+			<li><p class="as_info">ワッシュレット</p></li>
+			<li><p class="as_info">シャワーブース</p></li>
+			<li><p class="as_info">シャンプー</p></li>
+			<li><p class="as_info">コンディショナー</p></li>
+			<li><p class="as_info">ブラシ</p></li>
 		</ul>
 	</td>
 	<td>
 <ul>
-	<li><p class="as_info">- テレビ</p></li>
-	<li><p class="as_info">- 電話</p></li>
-	<li><p class="as_info">- インターネット接続</p></li>
-	<li><p class="as_info">- シェービングキット</p></li>
-	<li><p class="as_info">- ドライヤー</p></li>
+	<li><p class="as_info">テレビ</p></li>
+	<li><p class="as_info">電話</p></li>
+	<li><p class="as_info">インターネット接続</p></li>
+	<li><p class="as_info">シェービングキット</p></li>
+	<li><p class="as_info">ドライヤー</p></li>
 </ul>
 </td>
 <td>
 <ul>
-<li><p class="as_info">- スリープウェア</p></li>
-<li><p class="as_info">- スリッパ</p></li>
-<li><p class="as_info">- 冷蔵庫</p></li>
-<li><p class="as_info">- ヘルスメーター</p></li>
-<li><p class="as_info">- ミニバー</p></li>
+<li><p class="as_info">スリープウェア</p></li>
+<li><p class="as_info">スリッパ</p></li>
+<li><p class="as_info">冷蔵庫</p></li>
+<li><p class="as_info">ヘルスメーター</p></li>
+<li><p class="as_info">ミニバー</p></li>
 </ul>
 </td>
 <td>
 <ul>
-<li><p class="as_info">- 金庫</p></li>
-<li><p class="as_info">- タウルセット</p></li>
-<li><p class="as_info">- アイロン</p></li>
-<li><p class="as_info">- アイロンスプレー</p></li>
-<li><p class="as_info">- アイロン台</p></li>
+<li><p class="as_info">金庫</p></li>
+<li><p class="as_info">タウルセット</p></li>
+<li><p class="as_info">アイロン</p></li>
+<li><p class="as_info">アイロンスプレー</p></li>
+<li><p class="as_info">アイロン台</p></li>
 </ul>
 </td>
 	</tr>
@@ -655,16 +631,16 @@
 	<div class="reco_frame">
 		<div class="reco_events">
 			<img src="imgs/roomdetail_event01.jpg" alt="..." class="reco_img">
-			<a href="#"><p class="dp_scap">- 眠りのおもてなしプラン
+			<a href="#"><p class="dp_scap">眠りのおもてなしプラン
 			<br>
-			<span class="as_info"> __東京ベーサイドリゾートへようこそ</span>
+			<span class="as_info">東京ベーサイドリゾートへようこそ</span>
 		</p></a>
 		</div>
 		<div class="reco_events">
 			<img src="imgs/roomdetail_event02.jpg" alt="..." class="reco_img">
-			<a href="#"><p class="dp_scap">- 特別な日お食事付きプラン
+			<a href="#"><p class="dp_scap">特別な日お食事付きプラン
 			<br>
-			<span class="as_info"> __豪華スイトルーム&食事</span>
+			<span class="as_info">豪華スイトルーム&食事</span>
 		</p></a>
 		</div>
 	</div>
@@ -679,50 +655,50 @@
 		<hr>
 	<div id="footercol01">
 	<h3>HOTEL TRUSTY GROUP 総合トップ</h3>
-	<table id="hotellist" width="100%">
-		<tr>
-			<td width="50%">
-				<ul>
+	<ul class="hotellist">
 					<li><a href="#" class="textlink">神戸____旧居留地</a></li>
 					<li><a href="#" class="textlink">トラスティ心斎橋</a></li>
 					<li><a href="#" class="textlink">トラスティ名古屋</a></li>
-				</ul></td>
-				<td width="50%">
-					<ul>
-						<li><a href="#" class="textlink">金沢_____香林坊</a></li>
-						<li><a href="#" class="textlink">名古屋 ______栄</a></li>
-						<li><a href="#" class="textlink">大阪 ____阿部野</a></li>
-					</ul></td>
-		</tr>
-	</table>
+				</ul>
+
+					<ul class="hotellist">
+						<li class="hotellist_names"><a href="#" class="textlink">金沢_____香林坊</a></li>
+						<li class="hotellist_names"><a href="#" class="textlink">名古屋_______栄</a></li>
+						<li class="hotellist_names"><a href="#" class="textlink">大阪_____阿部野</a></li>
+					</ul>
+
 </div>
 <div id="footercol02">
 	<a href="index.html"><img src="imgs/logo_s.png"  id="logo_s" alt="..."></a>
 	<p><small>Copyright(c) RESORTTRUST All rights reserved.</small></p>
 </div>
 <div id="footercol03">
-	<div id="phonenumber">
+
 		<h3>予約電話(代表): 03 - 6700 - 0001</h3>
-	</div>
-	<table class="footerlinks" width="100%">
-		<tr>
-			<td width="37%"><a href="#" class="textlink">会社情報</a></td>
-			<td width="38%"><a href="#" class="textlink">採用情報</a></td>
-			<td width="40%"><a href="#" class="textlink">よくある質問</a></td>
+		<br>
+
+	<ul class="footerlinks">
+
+			<li><a href="#" class="textlink">会社情報</a></li>
+			<li><a href="#" class="textlink">採用情報</a></li>
+			<li><a href="#" class="textlink">よくある質問</a></li>
+	</ul>
+<br>
+	<ul class="footerlinks">
+
+			<li><a href="#" class="textlink">ご利用規約</a></li>
+			<li><a href="#" class="textlink">プライバシポリシー</a></li>
+			<li><a href="#" class="textlink">サイトマップ</a></li>
 		</tr>
-	</table>
-	<table class="footerlinks" width="100%">
-		<tr>
-			<td width="30%"><a href="#" class="textlink">ご利用規約</a></td>
-			<td width="45%"><a href="#" class="textlink">プライバシポリシー</a></td>
-			<td width="30%"><a href="#" class="textlink">サイトマップ</a></td>
-		</tr>
-	</table>
-<p>東京ベイサイド 〒135-0063 東京都江東区有明3-1-15</p>
+	</ul>
+	<br>
+
+<p class="footer_add">東京ベイサイド 〒135-0063 東京都江東区有明3-1-15</p>
 </div>
 </div>
 
 </footer>
+
 
 
 
