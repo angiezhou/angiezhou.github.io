@@ -235,8 +235,12 @@ footer h3{
 /*TOP IMAGE*/
 #topimg{
 	margin-top: 0px;
-	height:495px
+	width:1150px;
+	height:495px;
+	position:relative;
+	overflow: hidden;
 }
+
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -581,11 +585,52 @@ margin-top:18px;
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////ROOMDETAILS////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* THUMBNAIL */
+
+#slideshow {
+    margin: 0;
+    position: relative;
+    width: 1150px;
+}
+
+#slideshow ul {
+  list-style: none;
+}
+
+#slideshow li {
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 0 0;
+
+}
+
+
+#slideshow li img {
+  position: absolute;
+	top:0;
+  left: 0;
+  z-index: -1;
+
+  -webkit-transition: opacity 1s ease-in-out;
+     -moz-transition: opacity 1s ease-in-out;
+       -o-transition: opacity 1s ease-in-out;
+      -ms-transition: opacity 1s ease-in-out;
+          transition: opacity 1s ease-in-out;
+
+}
+
+#slideshow li img:target {
+    z-index: 1;
+}
+
+#slideshow li img:not(:target) {
+    opacity: 0;
+}
+
 .thumbnails{
 	widht:960px;
 	margin-left:102px;
 	background-image: url('imgs/tbn_frame.png');
-	margin-top:60px;
+	margin-top:50px;
 	height:218px;
 	background-repeat:no-repeat;
 
@@ -606,12 +651,12 @@ margin-left:25px;
 	height:185px;
 }
 .tbn_02{
-	background-image:url('imgs/tbn_02.jpg');
+	background-image:url('imgs/tbn_03.jpg');
 	width:286px;
 	height:185px;
 }
 .tbn_03{
-	background-image:url('imgs/tbn_03.jpg');
+	background-image:url('imgs/tbn_02.jpg');
 	width:286px;
 	height:185px;
 }
@@ -634,7 +679,7 @@ margin-left:25px;
 	margin-left:12px;
 }
 
-.tbn_on{
+.tbn_off_on{
 	border: solid 1px rgba(164,160,160,0.8);
 	width:262px;
 	height:160px;
