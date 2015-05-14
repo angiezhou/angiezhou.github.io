@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $('.carousel').carousel({
 		});
 $('.numberBox .countMinus').click(function(){
@@ -15,22 +14,4 @@ $('.numberBox .countPlus').click(function(){
 	$(this).siblings("h2").html(++count);
 
 	return false;
-=======
-$(document).ready(function(){
-	$('.carousel').carousel({
-	});
-
-	$('.event-item').on({
-		mouseenter:function(e){
-			e.preventDefault();
-			var $detail=$(this).find('.detail');
-			$detail.fadeIn();
-		},
-		mouseleave:function(e){
-			e.preventDefault();
-			var $detail=$(this).find('.detail');
-			$detail.fadeOut();
-		}
-	});
->>>>>>> origin/master
 });
