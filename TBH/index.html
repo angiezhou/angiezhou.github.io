@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="./css/style.css">
 <link type="text/css" rel="stylesheet" href="./css/lightbox.css">
-<script type="text/javascript" src="./js/js.js"></script>
 <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="./js/lightbox.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -48,7 +47,7 @@
 
 <li><center><a href="roomdetail.html">ご宿泊<br><span>ROOMS</span></a></center></li>
 <li><center><a href="#">レストラン&バー<br><span>RESTAURANT</span></a></center></li>
-<li><center><a href="#">スペシャル<br><span>SPECIAL OFFERS</span></a></center></li>
+<li><center><a href="specialoffers.html">スペシャル<br><span>SPECIAL OFFERS</span></a></center></li>
 <li><center><a href="#">アクセス<br><span>MAP / ACCESS</span></a></center></li>
 
 </ul>
@@ -136,10 +135,10 @@
 
 		<h3>ご宿泊日 CHECK IN</h3>
 
-		<select class="date-selector">
-			<option value="20150507">2015年5月<span class="day">07</span>日</option>
-			<option value="20150507">2015年5月<span class="day">08</span>日</option>
-			<option value="20150509">2015年5月<span class="day">09</span>日</option>
+		<select class="date-selector" id="check-in-date">
+			<option value="20150507"></option>
+			<option value="20150507">2015年5月14日</option>
+			<option value="20150509">2015年5月15日</option>
 
 </select>
 
@@ -151,8 +150,8 @@
 
 		<h3>ご出発日 CHECK OUT</h3>
 
-		<select class="date-selector">
-			<option value="20150507">2015年5月07日</option>
+		<select class="date-selector" id="check-out-date">
+			<option value="20150507"></option>
 			<option value="20150507">2015年5月08日</option>
 			<option value="20150509">2015年5月09日</option>
 
@@ -162,17 +161,17 @@
 	</div>
 
 	<!-- NO. OF GUESTS-->
-	<div id="guestno">
+	<div id="guestno" class="numberBox">
 
-		<h3>ご宿泊人数 GUEST</h3>
-		<a class="countMinus" href="#"><img src="imgs/arrow_left.png" alt="..." class="arrow_left"></a>
-<h2 id="guestCount">2</h2>
-<a class="countPlus" href="#"><img src="imgs/arrow_right.png" alt="..." class="arrow_right"></a>
+	<h3>ご宿泊人数 GUEST</h3>
+	<a class="countMinus" href=" "><img src="imgs/arrow_left.png" alt="…" class="arrow_left"></a >
+	<h2 id="guestCount">2</h2>
+	<a class="countPlus" href="#"><img src="imgs/arrow_right.png" alt="…" class="arrow_right"></a >
 
-	</div>
+		</div>
 
 	<!-- NO. OF ROOMS-->
-	<div id="roomno">
+	<div id="roomno" class="numberBox">
 
 		<h3>部屋数 ROOM</h3>
 		<a class="countMinus" href="#"><img src="imgs/arrow_left.png" alt="..." class="arrow_left"></a>
@@ -402,4 +401,5 @@
 
 
 </body>
+<script type="text/javascript" src="./js/js.js"></script>
 </html>

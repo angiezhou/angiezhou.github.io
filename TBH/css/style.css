@@ -75,7 +75,7 @@ header{
 #home-link{
 	position: absolute;
 	top:12px;
-	left:680px;
+	left:400px;
 	width:342px;
 	height:130px;
 	background-color:transparent;
@@ -498,8 +498,8 @@ footer h3{
 	float:left;
 }
 .btn_calendar{
-	margin-left: 92px;
-	margin-top: 5px;
+	margin-left: 75px;
+	margin-top: 8px;
 	width:20px;
 	float:left;
 }
@@ -512,13 +512,24 @@ footer h3{
 	border: none;
 	-webkit-appearance:none;
 	color:#530d0d;
-	background: url('../imgs/arrow_down.png') right 100% no-repeat;
-	width:130px;
+	width:150px;
 	margin-right:10px;
-	height:20px;
+	height:40px;
+	margin-top:-2px;
 }
+#check-in-date{
+	background: url('../imgs/date_01.png') no-repeat;
+	width:150px;
+	height:40px;
 
+}
+#check-out-date{
+	background: url('../imgs/date_02.png') no-repeat;
+	width:150px;
+	height:40px;
+}
 /*RESERVATIONS-FONT SETTINGS*/
+
 
 #reservebtn h1{
 	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
@@ -533,7 +544,8 @@ padding-top:18px;
 	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
 	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
 	font-size: 36px;
-	color: #701010;
+	color: #7e2222;
+	font-weight: lighter;
 	margin-left: 15px;
 	margin-right:15px;
 	margin-top: 3px;
