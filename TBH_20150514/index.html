@@ -45,10 +45,10 @@
 	<nav class="gnavi">
 <ul>
 
-<li><center><a href="roomdetail.html">ご宿泊<br><span>ROOMS</span></a></center></li>
-<li><center><a href="#">レストラン&バー<br><span>RESTAURANT</span></a></center></li>
-<li><center><a href="specialoffers.html">スペシャル<br><span>SPECIAL OFFERS</span></a></center></li>
-<li><center><a href="#">アクセス<br><span>MAP / ACCESS</span></a></center></li>
+	<li class="gnavi_off"><a href="roomdetail.html">ご宿泊<br><span>ROOMS</span></a></li>
+	<li class="gnavi_off"><a href="#">レストランラウンジ<br><span>RESTAURANT</span></a></li>
+	<li class="gnavi_off"><a href="specialoffers.html">スペシャル<br><span>SPECIAL OFFERS</span></a></li>
+	<li class="gnavi_off"><a href="#">アクセス<br><span>MAP / ACCESS</span></a></li>
 
 </ul>
 	</nav>
@@ -113,14 +113,21 @@
 <!-- EVENTS -->
 
 <div id="event">
-	<div id="event01">
-		<a href="#"><img src="imgs/event01.png" alt="..."></a>
+	<div class="event-item" id="event01">
+		<img src="imgs/event01.png" alt="...">
+			<div class="detail">
+				<div class="description">2015年<span class="date">5/20-6-8</span><a href="#">詳しくはこちら</a></div>
+			</div>
 	</div>
 
-	<div id="event02">
-		<a href="#"><img src="imgs/event02.png" alt="..."></a>
+	<div class="event-item" id="event02">
+		<img src="imgs/event02.png" alt="...">
+			<div class="detail">
+				<div class="description">2015年<span class="date">5/20-6-8</span><a href="#">詳しくはこちら</a></div>
+			</div>
 	</div>
 </div>
+
 
 <!-- RESERVATION -->
 <div id="reservation">
@@ -136,7 +143,7 @@
 		<h3>ご宿泊日 CHECK IN</h3>
 
 		<select class="date-selector" id="check-in-date">
-			<option value="20150507"></option>
+			<option value="20150507"> </option>
 			<option value="20150507">2015年5月14日</option>
 			<option value="20150509">2015年5月15日</option>
 
@@ -151,7 +158,7 @@
 		<h3>ご出発日 CHECK OUT</h3>
 
 		<select class="date-selector" id="check-out-date">
-			<option value="20150507"></option>
+			<option value="20150507"> </option>
 			<option value="20150507">2015年5月08日</option>
 			<option value="20150509">2015年5月09日</option>
 
@@ -210,73 +217,73 @@
 
 	<!-- TITLE TABLE -->
 
-<table id="newstitle" width="100%">
+<table id="newstitle">
 	<tr>
-		<td width="91%">
+		<td class="newstitle_col_01">
 			<div class="title">
 			<h1>お知らせ/ INFORMATION</h1>
 				</div>
 		</td>
-		<td width="9%"><a href="#" class="textlink">一覧へ »</a></td>
+		<td class="newstitle_col_02"><a href="#" class="textlink">一覧へ »</a></td>
 	</tr>
 </table>
 
 <!-- NEWS TABLE -->
 
-<table id="newsfeed" width="100%">
+<table id="newsfeed">
 
 	<!-- NEWS01 -->
 	<tr>
-		<td width="15%">
+		<td class="newsfeed_col_01">
 			<div class="newsdate">
 			<h5>2015.02.01</h5>
 		</div>
 		</td>
-		<td width="75%">
+		<td class="newsfeed_col_02">
 			<a href="#" class="textlink">改修工事が終了しましたので2月1日からは通常営業に戻ります。</a>
 		</td>
 	</tr>
 	<!-- NEWS02 -->
 	<tr>
-		<td width="15%">
+		<td>
 			<div class="newsdate">
 			<h5>2015.01.29</h5>
 		</div>
 		</td>
-		<td width="75%">
+		<td>
 			<a href="#" class="textlink">ランチタイム営業再開のご案内 期間限定で特典もご用意させていただきました。</a>
 		</td>
 	</tr>
 	<!-- NEWS03 -->
 	<tr>
-		<td width="15%">
+		<td>
 			<div class="newsdate">
 			<h5>2014.02.21</h5>
 		</div>
 		</td>
-		<td width="75%">
+		<td>
 			<a href="#" class="textlink">2014年4月1日より、無料送迎シャトルバス夜便の時刻、ルートが変わります。</a>
 		</td>
 	</tr>
 	<!-- NEWS04 -->
 	<tr>
-		<td width="15%">
+		<td>
 			<div class="newsdate">
 			<h5>2014.02.11</h5>
 		</div>
 		</td>
-		<td width="75%">
+		<td>
 			<a href="#" class="textlink">ホームページからのご予約がお得 ワンドリンクサービス付き！(お一人様1ドリンク)</a>
 		</td>
 	</tr>
 	<!-- NEWS05 -->
 	<tr>
-		<td width="15%">
+		<td>
 			<div class="newsdate">
 			<h5>2013.12.31</h5>
 		</div>
 		</td>
-		<td width="75%">
+		<td>
 			<a href="#" class="textlink">年始シャトルバスのご案内—１月３日（金）より通常通り運行致します。</a>
 		</td>
 	</tr>
@@ -289,27 +296,26 @@
 
 <div id="otherinfo">
 	<!-- QRCODE&BTNS -->
-	<table id="qrcodetitle" width=100%>
+	<table id="qrcodetitle">
 		<tr>
-			<td width="93%"><p>QRコードで携帯サイトの案内 • 予約も可能です</p></td>
-			<td width="7%"><a href="#"><img src="imgs/arrow_right.png" alt="..."></a></td>
+			<td class="qrcodetitle_col_01"><p>QRコードで携帯サイトの案内 / 予約も可能です</p></td>
+			<td class="qrcodetitle_col_02"><a href="#"><img src="imgs/arrow_right.png" alt="..."></a></td>
 		</tr>
 	</table>
 	<img src="imgs/qrcode.png" alt="..." id="qrcode">
 	<a href="#">
-	<table id="mail" width="100%">
+	<table id="mail">
 		<tr>
-				<td width="40%"><img src="imgs/maiicon.png" alt="..." id="mailicon"></td>
-				<td width="60%"><h5>メルマガ登録</h5></td>
-
+				<td><img src="imgs/maiicon.png" alt="..." id="mailicon"></td>
+				<td><h5>メルマガ登録</h5></td>
 		</tr>
 	</table></a>
 	<a href="#">
-		<table id="bus" width="100%">
+		<table id="bus">
 
 		<tr>
-				<td width="40%"><img src="imgs/busicon.png" alt="..." id="busicon"></td>
-				<td width="60%"><h5>シャトルバス</h5></td>
+				<td><img src="imgs/busicon.png" alt="..." id="busicon"></td>
+				<td><h5>シャトルバス</h5></td>
 
 		</tr>
 
@@ -321,12 +327,12 @@
 
 	<!-- CLUBTRUSTYINFO -->
 
-	<table id="clubtrustytitle" width="100%">
+	<table id="clubtrustytitle">
 		<tr>
-			<td width="68%">
+			<td>
 				<h2>Club Trusty</h2>
 			</td>
-			<td width="32%"><a href="#" class="textlink">詳しくはこちら »</a></td>
+			<td><a href="#" class="textlink">詳しくはこちら »</a></td>
 		</tr>
 	</table>
 
@@ -334,10 +340,10 @@
 	<p>Club  Trustyグループご利用いただくたびにポイントを付加。</p>
 
 
-	<table id="clubtrustyinfo" width="100%">
+	<table id="clubtrustyinfo">
 		<tr>
-			<td width="54%"><p>メンバーだけの特典も充実。</p></td>
-			<td width="50%"><h5>入会金 • 年会費無料です</h5></td>
+			<td><p>メンバーだけの特典も充実。</p></td>
+			<td><h5>入会金 / 年会費無料です</h5></td>
 		</tr>
 	</table>
 
@@ -386,7 +392,6 @@
 			<li><a href="#" class="textlink">ご利用規約</a></li>
 			<li><a href="#" class="textlink">プライバシポリシー</a></li>
 			<li><a href="#" class="textlink">サイトマップ</a></li>
-		</tr>
 	</ul>
 	<br>
 

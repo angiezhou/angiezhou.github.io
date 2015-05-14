@@ -3,13 +3,29 @@ body{
 	width:1150px;
 	overflow:auto;
 }
-.gnavi a:hover{ text-decoration: none;
+.hide{
+
+	z-index: -1;
+
+}
+.gnavi_off a:hover{ text-decoration: none;
 	color:#ffffff;
-	width:160px;
+	width:180px;
+	height:50px;
+	border-bottom: solid 1px #736e5e;
+	border-top: solid 1px #736e5e;
+	display:block;
+}
+.gnavi_active{ text-decoration: none;
+	color:#ffffff;
+	width:180px;
 	height:52px;
 	border-bottom: solid 1px #736e5e;
 	border-top: solid 1px #736e5e;
 	display:block;
+}
+.gnavi_active a:hover{ text-decoration: none;
+	color:#ffffff;
 }
 .block01,.roomlist a:hover{ text-decoration: none;
 	color:#ffffff;
@@ -19,14 +35,7 @@ body{
 	text-decoration: none;
 }
 
-.selected{
-	text-decoration: none;
-	width:160px;
-	height:52px;
-	border-bottom: solid 1px #736e5e;
-	border-top: solid 1px #736e5e;
-	display:block;
-	}
+
 .textlink{
 	color:#736e5e;
 	text-decoration: underline;
@@ -102,13 +111,14 @@ header{
 .gnavi li{
 	list-style: none;
 	float:left;
-	width:200px;
-	margin-left:36px;
+	width:180px;
+	margin-left:62px;
+	text-align: center;
 }
 .gnavi li:first-child{
 	list-style: none;
 	float:left;
-	width:200px;
+	width:180px;
 	margin-left:0px;
 }
 .gnavi a{
@@ -250,7 +260,7 @@ footer h3{
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #000 \9;
+  background-color: #000000;
   background-color: rgba(124,124,124,0.3);
   border:0;
   border-radius: 10px;
@@ -280,10 +290,48 @@ footer h3{
 	float:left;
 
 }
-#event01{
+#event div{
+	position: relative;
 	float:left;
 	width:295px;
 	margin-right: 30px;
+}
+#event>div>.detail{
+display: none;
+	position: absolute;
+
+	width: 0px;
+	height: 0px;
+	line-height: 32px;
+	text-align: center;
+}
+#event>div .description{
+	display: block;
+	color: #b0ada2;
+	font-size: 12px;
+  width: 150px;
+  height: 110px;
+  margin-top:-250px;
+	margin-left:75px;
+  line-height: 32px;
+  text-align: center;
+	background-color:rgba(61,68,81,0.8);
+}
+#event>div .description{
+	font-size: 12px;
+	display: block;
+	clear: both;
+}
+#event>div .description a:link,
+#event>div .description a:hover,
+#event>div .description a:visited{
+	color: #b0ada2;
+	text-decoration: underline;
+}
+#event>div .description .date{
+	font-size: 22px;
+	display: block;
+	clear: both;
 }
 
 
@@ -601,6 +649,12 @@ padding-top:18px;
 #newstitle{
 	width:622px;
 }
+.newstitle_col_01{
+	width:566px;
+}
+.newstitle_col_02{
+	width:56px;
+}
 
 .newsdate{
 	background-color: #3e4452;
@@ -612,6 +666,13 @@ padding-top:18px;
 	margin-top:28px;
 	width:622px;
 	height:212px;
+}
+.newsfeed_col_01{
+	width:10px;
+}
+.newsfeed_col_02{
+	width:466px;
+
 }
 
 /*NEWS TYPE SETTING*/
@@ -638,11 +699,21 @@ padding-top:18px;
 	float:left;
 	margin-right:22px;
 }
+#qrcodetitle{
+	width:295px;
+}
+.qrcodetitle_col_01{
+	width:275px;
+}
+.qrcodetitle_col_02{
+	width:20px;
+}
 #mail{
 	background-color: #f5f3ef;
 	width:158px;
 	height:50px;
 }
+
 
 #mail td,#bus td{
 	vertical-align: middle;
@@ -684,10 +755,16 @@ margin-top:18px;
 	width:295px;
 	margin-top:-20px;
 }
+#clubtrustytitle td:first-child{
+	width:200px;
+}
 #clubtrustyinfo{
 	width:295px;
 	height:15px;
 	margin-top:-20px;
+}
+#clubtrustyinfo td:first-child{
+	width:161px;
 }
 
 /*CLUB TRUSTY TYPE SETTING*/
@@ -747,7 +824,7 @@ margin-top:18px;
 }
 
 .thumbnails{
-	widht:960px;
+	width:960px;
 	margin-left:102px;
 	background-image: url('../imgs/tbn_frame.png');
 	margin-top:50px;
@@ -777,6 +854,21 @@ margin-left:25px;
 }
 .tbn_03{
 	background-image:url('../imgs/tbn_02.jpg');
+	width:286px;
+	height:185px;
+}
+.tbn_sp_01{
+	background-image:url('../imgs/specials_tbn01.png');
+	width:286px;
+	height:185px;
+}
+.tbn_sp_02{
+	background-image:url('../imgs/specials_tbn02.png');
+	width:286px;
+	height:185px;
+}
+.tbn_sp_03{
+	background-image:url('../imgs/specials_tbn03.png');
 	width:286px;
 	height:185px;
 }
@@ -954,18 +1046,43 @@ text-align: center;
 	color: #b0ada2;
 	vertical-align: top;
 }
+.roomlisttdwidth{
+	width:230px;
+	padding-top:12px;
+}
 .dp_scap{
 	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
 font-size: 22px;
 color: #530d0d;
-margin:0;
+margin-top:-10px;
 }
 .dp_scap_on{
 	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
 font-size: 22px;
 color: #b0ada2;
-margin:0;
+margin-top:-10px;;
 }
+.special_scap{
+	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
+font-size: 22px;
+color: #530d0d;
+margin-left:18px;
+padding-top:25px;
+}
+.special_scap_on{
+	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
+font-size: 22px;
+color: #b0ada2;
+margin:0;
+margin-left:18px;
+padding-top:25px;
+width:290px;
+height:50px;
+background-image: url('../imgs/arrow_right.png');
+background-repeat: no-repeat;
+background-position: 240px 30px;
+}
+
 /* ROOMSPECS */
 .roomspecs{
 width:295px;
@@ -1156,21 +1273,19 @@ float:left;
 
 .svg_noroom{
 	padding-top:5px;
-	fill:#ffffff;
+
 	width:55px;
 	height:12px;
 
 }
 .svg_lessroom{
 	padding-top:5px;
-	fill:#b0ada2;
 	width:55px;
 	height:12px;
 
 }
 .svg_ok{
 	padding-top:5px;
-	fill:#530d0d;
 	width:55px;
 	height:12px;
 
@@ -1252,4 +1367,175 @@ padding-top:12px;
 	padding-left:160px;
 	margin-top:70px;
 
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////SPECIALOFFERS////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.specials_posts{
+	width:625px;
+	margin-left:435px;
+}
+.posts{
+	width:625px;
+	margin:0;
+	padding:0;
+
+}
+.posts ul{
+	list-style: none;
+	padding:0;
+}
+.post_date_tag{
+	width:92px;
+	float:left;
+}
+.post_yymm{
+	width:92px;
+	height:30px;
+	border:solid 1px #b0ada2;
+}
+.post_dd{
+	width:90px;
+	height:35px;
+}
+.post_tag_fair{
+	width:92px;
+	height:30px;
+	background-color: #3e4452;
+	margin-top:35px;
+}
+.post_tag_food{
+	width:92px;
+	height:30px;
+	background-color: #530d0d;
+	margin-top:35px;
+}
+.post_yymm_text{
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
+	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: #b0ada2;
+padding-top:6px;
+text-align: center;
+}
+.post_dd_text{
+	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
+	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
+font-size: 45px;
+color: #736e5e;
+padding-top:6px;
+text-align: center;
+}
+
+.post_title{
+	width:492px;
+	margin-left:90px;
+	border:solid 1px transparent;
+	padding:0;
+}
+
+.post_bigtitle_text{
+	font-family:   "ヒラギノ明朝 ProN W6","HiraMinProN-W6", "HG明朝E","ＭＳ Ｐ明朝", "MS PMincho","MS 明朝",serif;
+font-size: 36px;
+color: #530d0d;
+margin-left:35px;
+margin-top:-8px;;
+}
+.post_subtitle_text{
+	font-family:sans-serif;
+	font-size: 18px;
+color: #3e4452;
+margin-left:35px;
+font-weight: lighter;
+}
+.post_text{
+	font-family:sans-serif;
+	font-size: 12px;
+color: #736e5e;
+margin-top:20px;
+font-weight: lighter;
+width:600px;
+text-align: justify;
+line-height: 22px;
+}
+
+.coursetitle:before{
+content: "«";
+}
+.coursetitle:after{
+content: "»";
+}
+
+.courselist:before{
+content: "_ ";
+}
+.coursecaption:before{
+content: "// ";
+}
+.coursecaption:after{
+content: "// ";
+}
+.post_moreinfo{
+	text-decoration: underline;
+	font-family:sans-serif;
+	font-size: 12px;
+color: #3e4452;
+margin-left:550px;
+font-weight: lighter;
+}
+
+.post_bigimg{
+	margin-top:40px;
+	margin-bottom: 40px;
+}
+.doubleline{
+	border-top: 3px double #eaebeb;
+}
+.paging{
+	padding:0;
+	list-style: none;
+	margin-top:80px;
+	padding-bottom: 80px;
+}
+.paging:before{
+	content:"";
+	width:40px;
+	height:40px;
+	background-image: url('../imgs/specials_prevpg.png');
+	background-repeat: no-repeat;
+	float:left;
+}
+.paging:after{
+	content:"";
+	width:40px;
+	height:40px;
+	background-image: url('../imgs/specials_nextpg.png');
+	background-repeat: no-repeat;
+	float:left;
+}
+
+.paging li{
+	float:left;
+	width:10px;
+	margin-left:45px;
+	margin-top:10px;
+}
+.paging li:last-child{
+	margin-right:47px;
+}
+.paging_on{
+	font-family:sans-serif;
+font-size: 18px;
+color: #530d0d;
+padding-top:0;
+text-align: center;
+font-weight: 600;
+text-decoration: underline;
+}
+.paging_off{
+	font-family:sans-serif;
+font-size: 18px;
+color: #b0ada2;
+padding-top:0;
+font-weight: 100;
+text-align: center;
 }

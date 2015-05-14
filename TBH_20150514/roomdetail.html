@@ -46,10 +46,10 @@
 	<ul>
 
 
-	<li><center><a href="roomdetail.html">ご宿泊<br><span>ROOMS</span></a></center></li>
-	<li><center><a href="#">レストラン&バー<br><span>RESTAURANT</span></a></center></li>
-	<li><center><a href="specialoffers">スペシャル<br><span>SPECIAL OFFERS</span></a></center></li>
-	<li><center><a href="#">アクセス<br><span>MAP / ACCESS</span></a></center></li>
+	<li class="gnavi_active"><a href="roomdetail.html">ご宿泊<br><span>ROOMS</span></a></li>
+	<li class="gnavi_off"><a href="#">レストランラウンジ<br><span>RESTAURANT</span></a></li>
+	<li class="gnavi_off"><a href="specialoffers.html">スペシャル<br><span>SPECIAL OFFERS</span></a></li>
+	<li class="gnavi_off"><a href="#">アクセス<br><span>MAP / ACCESS</span></a></li>
 
 	</ul>
 		</nav>
@@ -154,47 +154,47 @@
 	<div class="roomlist">
 		<h2 class="title">部屋タイプ / ROOM LIST</h2>
 		<ul>
-			<a href="#"><li class="roomlist_off"><section class="roomlist_contents"><p class="roomsize">14-16m<span class="m2">2</span></p>
+			<li class="roomlist_off"><a href="#"><div class="roomlist_contents"><p class="roomsize">14-16m<span class="m2">2</span></p>
 				<table class="roomlist_names">
 					<tr>
-						<td class="dp_scap" width="80%">シングルルーム</td>
+						<td class="roomlisttdwidth"><p class="dp_scap">シングルルーム</p></td>
 						<td class="roomsize">69室</td>
 					</tr>
-				</table></section>
-			</li></a>
-			<a href="#"><li class="roomlist_off"><section class="roomlist_contents"><p class="roomsize">16-20m<span class="m2">2</span></p>
+				</table></div></a>
+			</li>
+			<li class="roomlist_off"><a href="#"><div class="roomlist_contents"><p class="roomsize">16-20m<span class="m2">2</span></p>
 				<table class="roomlist_names">
 					<tr>
-						<td class="dp_scap" width="80%">ダブルルーム</td>
+						<td class="roomlisttdwidth"><p class="dp_scap">ダブルルーム</p></td>
 						<td class="roomsize">84室</td>
 					</tr>
-				</table></section>
-			</li></a>
-			<a href="#"><li class="roomlist_off"><section class="roomlist_contents"><p class="roomsize">22-27m<span class="m2">2</span></p>
+				</table></div></a>
+			</li>
+		<li class="roomlist_off">	<a href="#"><div class="roomlist_contents"><p class="roomsize">22-27m<span class="m2">2</span></p>
 				<table class="roomlist_names">
 					<tr>
-						<td class="dp_scap" width="80%">ツインルーム</td>
+						<td class="roomlisttdwidth"><p class="dp_scap">ツインルーム</p></td>
 						<td class="roomsize">45室</td>
 					</tr>
-				</table></section>
-			</li></a>
-			<a href="#"><li class="roomlist_off"><section class="roomlist_contents"><p class="roomsize">30-42m<span class="m2">2</span></p>
+				</table></div></a>
+			</li>
+			<li class="roomlist_off"><a href="#"><div class="roomlist_contents"><p class="roomsize">30-42m<span class="m2">2</span></p>
 				<table class="roomlist_names">
 					<tr>
-						<td class="dp_scap" width="80%">スーペリアルーム</td>
+						<td class="roomlisttdwidth"><p class="dp_scap">スーペリアルーム</p></td>
 						<td class="roomsize">24室</td>
 					</tr>
-				</table></section>
-			</li></a>
-			<a href="#"><li class="roomlist_on"><section class="roomlist_contents"><p class="roomsize_on">14-16m<span class="m2">2</span></p>
+				</table></div></a>
+			</li>
+			<li class="roomlist_on"><a href="#"><div class="roomlist_contents"><p class="roomsize_on">14-16m<span class="m2">2</span></p>
 				<img src="imgs/arrow_right.png" alt="...">
 				<table class="roomlist_names">
 					<tr>
-						<td class="dp_scap_on" width="80%">スイートルーム</td>
+						<td class="roomlisttdwidth"><p class="dp_scap_on">スイートルーム</p></td>
 						<td class="roomsize">69室</td>
 					</tr>
-				</table></section>
-			</li></a>
+				</table></div></a>
+			</li>
 
 
 		</ul>
@@ -242,12 +242,13 @@
 <div class="roomplan">
 	<a href="imgs/roomplan.png" data-lightbox="room-plan" data-title="スイートルーム"><img src="imgs/roomplan.png" alt="..." id="roomplan"></a>
 	<p class="dp_caption">スイートルーム 間取り図</p>
-	<a href="imgs/roomplan.png>"<img src="imgs/add_btn.png" alt="..." id="add_btn"></a>
+	<a href="imgs/roomplan.png"><img src="imgs/add_btn.png" alt="..." id="add_btn"></a>
+</div>
 </div>
 
 <!-- AMENITIES&SERVICES -->
 <div class="amenity_service">
-	<h2 class="title">アメニティ&サービス / AMENITIES& SERVICES</h2>
+	<h2 class="title">アメニティ + サービス / AMENITIES + SERVICES</h2>
 	<table class="as_table">
 		<tr>
 			<td>
@@ -612,18 +613,21 @@
 		<ul>
 			<li>
 		<svg class="svg_noroom">
-			<rect width="55px" height="11px">
-			<span class="dp_caption"> 予約不可</span></svg>
+			<rect width="55px" height="11px" fill="#ffffff"></rect>
+		</svg>
+			<span class="dp_caption">予約不可</span>
 		</li>
 		<li>
 	<svg class="svg_lessroom">
-		<rect width="55px" height="11px">
-		<span class="dp_caption"> 空室わずか</span></svg>
+		<rect width="55px" height="11px" fill="#b0ada2"></rect>
+		</svg>
+		<span class="dp_caption">空室わずか</span>
 	</li>
 	<li>
-<svg class="svg_ok">
-	<rect width="55px" height="11px">
-	<span class="dp_caption"> 空室あり</span></svg>
+	<svg class="svg_ok">
+	<rect width="55px" height="11px" fill="#530d0d"></rect>
+	</svg>
+	<span class="dp_caption">空室あり</span>
 </li>
 	</ul>
 	</div>
@@ -646,7 +650,7 @@
 			<img src="imgs/roomdetail_event02.jpg" alt="..." class="reco_img">
 			<a href="#"><p class="dp_scap">特別な日お食事付きプラン
 			<br>
-			<span class="as_info">豪華スイトルーム&食事</span>
+			<span class="as_info">豪華スイトルーム + 食事</span>
 		</p></a>
 		</div>
 	</div>
@@ -695,7 +699,6 @@
 			<li><a href="#" class="textlink">ご利用規約</a></li>
 			<li><a href="#" class="textlink">プライバシポリシー</a></li>
 			<li><a href="#" class="textlink">サイトマップ</a></li>
-		</tr>
 	</ul>
 	<br>
 
@@ -711,5 +714,5 @@
 
 
 </body>
-<script type="text/javascript" src="./js/js.js"></script>
+
 </html>
