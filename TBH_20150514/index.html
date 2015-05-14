@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="東京ベーサイドホテル">
+<meta name="Keyword" content="東京ベーサイドホテル">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+<link type="text/css" rel="stylesheet" href="./css/lightbox.css">
+<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="./js/lightbox.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<title>TOKYO BAYSIDE HOTEL</title>
+</head>
+
+
+
+
+
+<body>
+
+	<!-- HEADER -->
+	<header>
+		<div class="headercontainer">
+
+		<nav class="subnavi">
+			<nav id="clubtrustylogin">
+		<a href="#"><img src="imgs/subnavi_clubtrusty.png" alt="..."></a>
+	</nav>
+	<nav id="cslang">
+		<a href="#"><img src="imgs/subnavi_cs.png" alt="..."></a>
+		<img src="imgs/subnavi_bar.png" alt="...">
+		<select id="language">
+			<option value="ENG">ENG</option>
+			<option value="CHN_SP">中文</option>
+			<option value="KRE ">한국어</option>
+	</select>
+</nav>
+		</nav>
+	<nav class="gnavi">
+<ul>
+
+<li><center><a href="roomdetail.html">ご宿泊<br><span>ROOMS</span></a></center></li>
+<li><center><a href="#">レストラン&バー<br><span>RESTAURANT</span></a></center></li>
+<li><center><a href="specialoffers.html">スペシャル<br><span>SPECIAL OFFERS</span></a></center></li>
+<li><center><a href="#">アクセス<br><span>MAP / ACCESS</span></a></center></li>
+
+</ul>
+	</nav>
+</div>
+	</header>
+	<!-- LOGO HOME BTN -->
+
+		<a id="home-link" href="index.html"></a>
+
+
+
+<!-- MAIN IMAGE -->
+
+<div id="topimg">
+
+	<div id="carousel-topimg" class="carousel slide" data-ride="carousel">
+
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-topimg" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-topimg" data-slide-to="1" class="active"></li>
+		    <li data-target="#carousel-topimg" data-slide-to="2" class="active"></li>
+		  </ol>
+
+  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="./imgs/topimg_01_02.png" alt="...">
+		      <div class="carousel-caption">
+
+      </div>
+    </div>
+    <div class="item">
+      <img src="./imgs/topimg_02_02.png" alt="...">
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="./imgs/topimg_03_02.png" alt="...">
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+  </div>
+	<div id="control-arrows">
+	  <!--control arrows -->
+	  <a class="left carousel-control" href="#carousel-topimg" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-topimg" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+</div>
+</div>
+
+<div class="block01">
+<!-- EVENTS -->
+
+<div id="event">
+	<div id="event01">
+		<a href="#"><img src="imgs/event01.png" alt="..."></a>
+	</div>
+
+	<div id="event02">
+		<a href="#"><img src="imgs/event02.png" alt="..."></a>
+	</div>
+</div>
+
+<!-- RESERVATION -->
+<div id="reservation">
+
+	<div class="title">
+		<h1>宿泊予約 / RESERVATIONS</h1>
+	</div>
+
+
+	<!-- CHECK-IN -->
+	<div class="check-in-out">
+
+		<h3>ご宿泊日 CHECK IN</h3>
+
+		<select class="date-selector" id="check-in-date">
+			<option value="20150507"></option>
+			<option value="20150507">2015年5月14日</option>
+			<option value="20150509">2015年5月15日</option>
+
+</select>
+
+<a href="imgs/calendar_dummy.png" data-lightbox="calendar_dummy" data-title="カレンダー<br>4月 / 5月"><img src="imgs/btn_calendar.png" alt="..." class="btn_calendar"></a>
+	</div>
+
+	<!-- CHECK-OUT -->
+	<div class="check-in-out">
+
+		<h3>ご出発日 CHECK OUT</h3>
+
+		<select class="date-selector" id="check-out-date">
+			<option value="20150507"></option>
+			<option value="20150507">2015年5月08日</option>
+			<option value="20150509">2015年5月09日</option>
+
+</select>
+
+<a href="imgs/calendar_dummy.png" data-lightbox="calendar_dummy_2" data-title="カレンダー<br>4月 / 5月"><img src="imgs/btn_calendar.png" alt="..." class="btn_calendar"></a>
+	</div>
+
+	<!-- NO. OF GUESTS-->
+	<div id="guestno" class="numberBox">
+
+	<h3>ご宿泊人数 GUEST</h3>
+	<a class="countMinus" href=" "><img src="imgs/arrow_left.png" alt="…" class="arrow_left"></a >
+	<h2 id="guestCount">2</h2>
+	<a class="countPlus" href="#"><img src="imgs/arrow_right.png" alt="…" class="arrow_right"></a >
+
+		</div>
+
+	<!-- NO. OF ROOMS-->
+	<div id="roomno" class="numberBox">
+
+		<h3>部屋数 ROOM</h3>
+		<a class="countMinus" href="#"><img src="imgs/arrow_left.png" alt="..." class="arrow_left"></a>
+<h2 id="roomCount">1</h2>
+<a class="countPlus" href="#"><img src="imgs/arrow_right.png" alt="..." class="arrow_right"></a>
+
+	</div>
+
+	<!-- FILTER-->
+	<div id="filter">
+		<h3>検索方法 FILTER</h3>
+		<div class="filterbox">
+	        <input type="radio" name="filter" id="filter_1" value="1" checked="checked" />
+	        <label for="filter_1" data-label="宿泊プラン別">宿泊プラン別</label>
+	        <input type="radio" name="filter" id="filter_0" value="0" />
+	        <label for="filter_0" data-label="部屋タイプ別">部屋タイプ別</label>
+
+	</div>
+	</div>
+	<!-- RESERVEBTN-->
+	<div id="reservebtn">	<a href="#">
+		<h1>予約 »</h1>
+</a>	</div>
+
+</div>
+
+</div>
+
+
+
+<div class="block02">
+
+<!-- NEWS-->
+
+<div id="news">
+
+	<!-- TITLE TABLE -->
+
+<table id="newstitle" width="100%">
+	<tr>
+		<td width="91%">
+			<div class="title">
+			<h1>お知らせ/ INFORMATION</h1>
+				</div>
+		</td>
+		<td width="9%"><a href="#" class="textlink">一覧へ »</a></td>
+	</tr>
+</table>
+
+<!-- NEWS TABLE -->
+
+<table id="newsfeed" width="100%">
+
+	<!-- NEWS01 -->
+	<tr>
+		<td width="15%">
+			<div class="newsdate">
+			<h5>2015.02.01</h5>
+		</div>
+		</td>
+		<td width="75%">
+			<a href="#" class="textlink">改修工事が終了しましたので2月1日からは通常営業に戻ります。</a>
+		</td>
+	</tr>
+	<!-- NEWS02 -->
+	<tr>
+		<td width="15%">
+			<div class="newsdate">
+			<h5>2015.01.29</h5>
+		</div>
+		</td>
+		<td width="75%">
+			<a href="#" class="textlink">ランチタイム営業再開のご案内 期間限定で特典もご用意させていただきました。</a>
+		</td>
+	</tr>
+	<!-- NEWS03 -->
+	<tr>
+		<td width="15%">
+			<div class="newsdate">
+			<h5>2014.02.21</h5>
+		</div>
+		</td>
+		<td width="75%">
+			<a href="#" class="textlink">2014年4月1日より、無料送迎シャトルバス夜便の時刻、ルートが変わります。</a>
+		</td>
+	</tr>
+	<!-- NEWS04 -->
+	<tr>
+		<td width="15%">
+			<div class="newsdate">
+			<h5>2014.02.11</h5>
+		</div>
+		</td>
+		<td width="75%">
+			<a href="#" class="textlink">ホームページからのご予約がお得 ワンドリンクサービス付き！(お一人様1ドリンク)</a>
+		</td>
+	</tr>
+	<!-- NEWS05 -->
+	<tr>
+		<td width="15%">
+			<div class="newsdate">
+			<h5>2013.12.31</h5>
+		</div>
+		</td>
+		<td width="75%">
+			<a href="#" class="textlink">年始シャトルバスのご案内—１月３日（金）より通常通り運行致します。</a>
+		</td>
+	</tr>
+
+</table>
+
+</div>
+
+<!-- QRCODE / MAIL / BUS INFO / CLUBTRUSTY -->
+
+<div id="otherinfo">
+	<!-- QRCODE&BTNS -->
+	<table id="qrcodetitle" width=100%>
+		<tr>
+			<td width="93%"><p>QRコードで携帯サイトの案内 • 予約も可能です</p></td>
+			<td width="7%"><a href="#"><img src="imgs/arrow_right.png" alt="..."></a></td>
+		</tr>
+	</table>
+	<img src="imgs/qrcode.png" alt="..." id="qrcode">
+	<a href="#">
+	<table id="mail" width="100%">
+		<tr>
+				<td width="40%"><img src="imgs/maiicon.png" alt="..." id="mailicon"></td>
+				<td width="60%"><h5>メルマガ登録</h5></td>
+
+		</tr>
+	</table></a>
+	<a href="#">
+		<table id="bus" width="100%">
+
+		<tr>
+				<td width="40%"><img src="imgs/busicon.png" alt="..." id="busicon"></td>
+				<td width="60%"><h5>シャトルバス</h5></td>
+
+		</tr>
+
+
+	</table>	</a>
+
+
+	<hr>
+
+	<!-- CLUBTRUSTYINFO -->
+
+	<table id="clubtrustytitle" width="100%">
+		<tr>
+			<td width="68%">
+				<h2>Club Trusty</h2>
+			</td>
+			<td width="32%"><a href="#" class="textlink">詳しくはこちら »</a></td>
+		</tr>
+	</table>
+
+
+	<p>Club  Trustyグループご利用いただくたびにポイントを付加。</p>
+
+
+	<table id="clubtrustyinfo" width="100%">
+		<tr>
+			<td width="54%"><p>メンバーだけの特典も充実。</p></td>
+			<td width="50%"><h5>入会金 • 年会費無料です</h5></td>
+		</tr>
+	</table>
+
+</div>
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+	<div class="footercontainer">
+		<hr>
+	<div id="footercol01">
+	<h3>HOTEL TRUSTY GROUP 総合トップ</h3>
+	<ul class="hotellist">
+					<li><a href="#" class="textlink">神戸____旧居留地</a></li>
+					<li><a href="#" class="textlink">トラスティ心斎橋</a></li>
+					<li><a href="#" class="textlink">トラスティ名古屋</a></li>
+				</ul>
+
+					<ul class="hotellist">
+						<li class="hotellist_names"><a href="#" class="textlink">金沢_____香林坊</a></li>
+						<li class="hotellist_names"><a href="#" class="textlink">名古屋_______栄</a></li>
+						<li class="hotellist_names"><a href="#" class="textlink">大阪_____阿部野</a></li>
+					</ul>
+
+</div>
+<div id="footercol02">
+	<a href="index.html"><img src="imgs/logo_s.png"  id="logo_s" alt="..."></a>
+	<p><small>Copyright(c) RESORTTRUST All rights reserved.</small></p>
+</div>
+<div id="footercol03">
+
+		<h3>予約電話(代表): 03 - 6700 - 0001</h3>
+		<br>
+
+	<ul class="footerlinks">
+
+			<li><a href="#" class="textlink">会社情報</a></li>
+			<li><a href="#" class="textlink">採用情報</a></li>
+			<li><a href="#" class="textlink">よくある質問</a></li>
+	</ul>
+<br>
+	<ul class="footerlinks">
+
+			<li><a href="#" class="textlink">ご利用規約</a></li>
+			<li><a href="#" class="textlink">プライバシポリシー</a></li>
+			<li><a href="#" class="textlink">サイトマップ</a></li>
+		</tr>
+	</ul>
+	<br>
+
+<p class="footer_add">東京ベイサイド 〒135-0063 東京都江東区有明3-1-15</p>
+</div>
+</div>
+
+</footer>
+
+
+
+
+
+</body>
+<script type="text/javascript" src="./js/js.js"></script>
+</html>
