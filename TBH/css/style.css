@@ -1,6 +1,7 @@
 body{
 	margin:auto;
 	width:1150px;
+	overflow:auto;
 }
 .gnavi a:hover{ text-decoration: none;
 	color:#ffffff;
@@ -14,9 +15,10 @@ body{
 	color:#ffffff;
 
 }
-.reco_events a:hover{
+.reco_events,#reservebtn a:hover{
 	text-decoration: none;
 }
+
 .selected{
 	text-decoration: none;
 	width:160px;
@@ -52,7 +54,7 @@ margin:0;
 header{
 	width:1150px;
 	height:245px;
-	background-image: url("imgs/header.jpg");
+	background-image: url("../imgs/header.jpg");
 }
 .headercontainer{
 	padding-top:7px;
@@ -64,7 +66,7 @@ header{
 	border: none;
 	-webkit-appearance:none;
 	color:#736e5e;
-	background: url(imgs/selectlang.png) right 50% no-repeat;
+	background: url('../imgs/selectlang.png') right 50% no-repeat;
 	width:50px;
 	margin-left:10px;
 }
@@ -73,7 +75,7 @@ header{
 #home-link{
 	position: absolute;
 	top:12px;
-	left:395px;
+	left:680px;
 	width:342px;
 	height:130px;
 	background-color:transparent;
@@ -130,7 +132,7 @@ footer{
 	margin-top:90px;
 	width:1150px;
 	height:262px;
-	background-image: url("imgs/bg.jpg");
+	background-image: url("../imgs/bg.jpg");
 	background-repeat:repeat-y;
 }
 footer hr{
@@ -283,6 +285,10 @@ footer h3{
 	width:295px;
 	margin-right: 30px;
 }
+
+
+
+
 /*RESERVATIONS*/
 #reservation{
 	margin-left: 754px;
@@ -320,10 +326,130 @@ footer h3{
 	background-color: #f5f3ef;
 }
 
+#filter input[type=radio]{
+    display: none;
+}
+#filter input[type=radio] + label{
+	position: relative;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 30px;
+    cursor: pointer;
+		font-weight: normal;
+		color:#b0ada2;
+		background-color: #efedea;
+}
+
+@media (min-width: 1px) {
+    #filter input[type=radio]{
+        display: none;
+        margin: 0;
+    }
+
+    #filter input[type=radio] + label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    #filter input[type=radio]:checked + label::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+    }
 
 
-.byplan{
-	float:left;
+    /* either */
+.filterbox {
+	width:270px;
+	height:30px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+				margin-left:12px;
+    }
+    #filter .filterbox input[type=radio] + label {
+        position: static;
+        float: left;
+        display: block;
+        width: 50%;
+        margin-right: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+    #filter .filterbox input[type=radio] + label::before {
+        content: attr(data-label);
+
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+
+        display: block;
+        width: 50%;
+        height: auto;
+        margin-top: 0;
+
+        text-align: center;
+
+        color: transparent;
+        background: transparent;
+        border: 0 none;
+        border-radius: 0;
+    }
+    #filter .filterbox input[type=radio] + label:last-child::before {
+        left: 50%;
+        right: 0;
+
+    }
+    #filter .filterbox input[type=radio]:checked + label::before {
+        color: #fff;
+    }
+
+    #filter .filterbox input[type=radio] + label::after {
+        border-radius: 0;
+    }
+    #filter .filterbox input[type=radio]:first-child + label::after {
+        content: none;
+    }
+    #filter .filterbox input[type=radio] + label + input[type=radio] + label::after {
+        content: "";
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+
+        display: block;
+        width: auto;
+        height: auto;
+        margin: auto;
+
+        background: #3e4452;
+
+        -webkit-transition: all 200ms;
+        transition: all 200ms;
+    }
+
+    #filter .filterbox input[type=radio]:checked + label + input[type=radio] + label::after {
+        left: 0;
+        right: 50%;
+    }
+    #filter .filterbox input[type=radio] + label + input[type=radio]:checked + label::after {
+        left: 50%;
+        right: 0;
+    }
+
+}
+
+/* .filtercheckbox{
 	margin-left:15px;
 	width:120px;
 	height:32px;
@@ -331,37 +457,18 @@ footer h3{
 	border: solid 2px #530d0d;
 	color:#530d0d;
 
-}
+} */
 
-.byplan:active{
-	float:left;
-	margin-left:15px;
-	width:120px;
-	height:32px;
-	background-color: #ffffff;
-	border: solid 2px #530d0d;
-	color:#530d0d;
 
-}
-
-.byroom{
+/* .byroom{
 	margin-left:150px;
 	width:120px;
 	height:32px;
 	background-color: #b0ada2;
 	color: #f5f3ef;
 
-}
-.byroom:active{
-	font-size: 12px;
-	margin-left:150px;
-	width:120px;
-	height:32px;
-	background-color: #ffffff;
-	border: solid 2px #530d0d;
-	color:#530d0d;
+} */
 
-}
 
 #reservebtn{
 	display:block;
@@ -405,7 +512,7 @@ footer h3{
 	border: none;
 	-webkit-appearance:none;
 	color:#530d0d;
-	background: url(imgs/arrow_down.png) right 100% no-repeat;
+	background: url('../imgs/arrow_down.png') right 100% no-repeat;
 	width:130px;
 	margin-right:10px;
 	height:20px;
@@ -421,6 +528,7 @@ letter-spacing: 1.2px;
 margin-left: 115px;
 padding-top:18px;
 }
+
 #reservation h2{
 	font-family:"メイリオ","Meiryo","ヒラギノ角ゴ ProN W3",
 	"Hiragino Kaku Gothic ProN","ＭＳ Ｐゴシック","MS P Gothic",Verdana, Arial, Helvetica, sans-serif;
@@ -629,7 +737,7 @@ margin-top:18px;
 .thumbnails{
 	widht:960px;
 	margin-left:102px;
-	background-image: url('imgs/tbn_frame.png');
+	background-image: url('../imgs/tbn_frame.png');
 	margin-top:50px;
 	height:218px;
 	background-repeat:no-repeat;
@@ -646,17 +754,17 @@ float:left;
 margin-left:25px;
 }
 .tbn_01{
-	background-image:url('imgs/tbn_01.jpg');
+	background-image:url('../imgs/tbn_01.jpg');
 	width:286px;
 	height:185px;
 }
 .tbn_02{
-	background-image:url('imgs/tbn_03.jpg');
+	background-image:url('../imgs/tbn_03.jpg');
 	width:286px;
 	height:185px;
 }
 .tbn_03{
-	background-image:url('imgs/tbn_02.jpg');
+	background-image:url('../imgs/tbn_02.jpg');
 	width:286px;
 	height:185px;
 }
@@ -863,7 +971,7 @@ width:295px;
 	width:295px;
 	height:36px;
 	margin-bottom:38px;
-	background-image: url('imgs/roomdetail_vbar.jpg');
+	background-image: url('../imgs/roomdetail_vbar.jpg');
 	background-position: 100px 5px;
 	background-repeat: no-repeat;
 }

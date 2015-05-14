@@ -7,8 +7,11 @@
 <meta name="description" content="東京ベーサイドホテル">
 <meta name="Keyword" content="東京ベーサイドホテル">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="style.css">
-<script type="text/javascript" src="js.js"></script>
+<link type="text/css" rel="stylesheet" href="./css/style.css">
+<link type="text/css" rel="stylesheet" href="./css/lightbox.css">
+<script type="text/javascript" src="./js/js.js"></script>
+<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="./js/lightbox.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
@@ -140,7 +143,7 @@
 
 </select>
 
-<a href="#"><img src="imgs/btn_calendar.png" alt="..." class="btn_calendar"></a>
+<a href="imgs/calendar_dummy.png" data-lightbox="calendar_dummy" data-title="カレンダー<br>4月 / 5月"><img src="imgs/btn_calendar.png" alt="..." class="btn_calendar"></a>
 	</div>
 
 	<!-- CHECK-OUT -->
@@ -155,16 +158,16 @@
 
 </select>
 
-<a href="#"><img src="imgs/btn_calendar.png" alt="..." class="btn_calendar"></a>
+<a href="imgs/calendar_dummy.png" data-lightbox="calendar_dummy_2" data-title="カレンダー<br>4月 / 5月"><img src="imgs/btn_calendar.png" alt="..." class="btn_calendar"></a>
 	</div>
 
 	<!-- NO. OF GUESTS-->
 	<div id="guestno">
 
 		<h3>ご宿泊人数 GUEST</h3>
-		<a href="#"><img src="imgs/arrow_left.png" alt="..." class="arrow_left"></a>
-<h2>2</h2>
-<a href="#"><img src="imgs/arrow_right.png" alt="..." class="arrow_right"></a>
+		<a class="countMinus" href="#"><img src="imgs/arrow_left.png" alt="..." class="arrow_left"></a>
+<h2 id="guestCount">2</h2>
+<a class="countPlus" href="#"><img src="imgs/arrow_right.png" alt="..." class="arrow_right"></a>
 
 	</div>
 
@@ -172,26 +175,27 @@
 	<div id="roomno">
 
 		<h3>部屋数 ROOM</h3>
-		<a href="#"><img src="imgs/arrow_left.png" alt="..." class="arrow_left"></a>
-<h2>1</h2>
-<a href="#"><img src="imgs/arrow_right.png" alt="..." class="arrow_right"></a>
+		<a class="countMinus" href="#"><img src="imgs/arrow_left.png" alt="..." class="arrow_left"></a>
+<h2 id="roomCount">1</h2>
+<a class="countPlus" href="#"><img src="imgs/arrow_right.png" alt="..." class="arrow_right"></a>
 
 	</div>
 
 	<!-- FILTER-->
 	<div id="filter">
 		<h3>検索方法 FILTER</h3>
-	<a href="#">	<div class="byplan">
-		<h5>宿泊プラン別</h5>
-	</div></a>
-<a href="#">	<div class="byroom">
-		<h5>部屋タイプ別</h5>
-	</div></a>
+		<div class="filterbox">
+	        <input type="radio" name="filter" id="filter_1" value="1" checked="checked" />
+	        <label for="filter_1" data-label="宿泊プラン別">宿泊プラン別</label>
+	        <input type="radio" name="filter" id="filter_0" value="0" />
+	        <label for="filter_0" data-label="部屋タイプ別">部屋タイプ別</label>
+
+	</div>
 	</div>
 	<!-- RESERVEBTN-->
-	<a href="#"><div id="reservebtn">
+	<div id="reservebtn">	<a href="#">
 		<h1>予約 »</h1>
-	</div></a>
+</a>	</div>
 
 </div>
 
