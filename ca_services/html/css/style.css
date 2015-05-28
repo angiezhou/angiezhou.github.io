@@ -41,6 +41,7 @@ padding-left:392px;
 
 
 /* ---KEY_VIEW ---*/
+
 /* GNAVI */
 .gnavi{
 	width: 1150px;
@@ -50,6 +51,7 @@ padding-left:392px;
 .gnavi a{
 	color:rgba(0, 0, 0, 0.5);
 }
+
 .logo_btn{
 	width:90px;
 	height:90px;
@@ -57,24 +59,21 @@ margin-left:100px;
 margin-top:30px;
 float:left;
 }
-.dropdown_btn{
-width:80px;
-height:80px;
-margin-left:22px;
-margin-top:30px;
-}
 
 .gnavi ul{
-	float:left;
-	list-style: none;
 	padding:0;
+	list-style: none;
+	float:left;
+}
+.gnavi ul li ul{
+	margin-top:20px;
 	position: absolute;
 	z-index: 999;
-	margin-left:212px;
-	margin-top:58px;
+	margin-left:22px;
+	margin-top:40px;
 
 }
-.gnavi li{
+.gnavi ul li ul li{
 	width:441px;
 	height:65px;
 	list-style: none;
@@ -83,26 +82,26 @@ margin-top:30px;
 	border-bottom: solid 2px #7eb42f;
 	background-image: url('../imgs/dropdown_arrow.png');
 	background-repeat: no-repeat;
-	background-position: 50px;
+	background-position: 49px;
+	visibility: hidden;
 }
-.gnavi li:hover{
-	width:441px;
-	height:65px;
-	list-style: none;
+.gnavi ul li ul li:hover{
 	background-color: #7eb42f;
-	margin-top:-16px;
-	border-bottom: solid 2px #7eb42f;
 	background-image: url('../imgs/dropdown_arrow_hover.png');
 	background-repeat: no-repeat;
-	background-position: 50px;
+	background-position: 49px;
 }
 .gnavi li p{
-	color:#fff;
-	font-size: 16px;
-	font-family: sans-serif;
-	padding-left:110px;
-	padding-top:20px;
+font-family: sans-serif;
+font-size: 16px;
+color:#fff;
+margin-left:120px;
+padding-top:22px;
 }
+.gnavi ul:hover li{
+visibility: visible;
+}
+
 .key_view_btn{
 	width:90px;
 	height:90px;
@@ -119,12 +118,18 @@ float:left;
 
 }
 
+/* BIG IMG */
+
+
+
+
 
 /* KEYBOARD */
 .keyboard{
 	width:1150px;
 	height:565px;
 	background-color: #111111;
+	margin-top:-25px;
 
 }
 .keyboard ul{
@@ -192,13 +197,34 @@ footer a:hover{
 }
 footer small{
 	color:#aaaaaa;
-	margin-left:445px;
+	margin-left:470px;
+	font-family: sans-serif;
+	font-size: 10px;
 }
 
 /* SEARCH */
 #space_key{
 	z-index: -1;
 }
+#search_table input::-webkit-input-placeholder {
+font-family: sans-serif;
+font-size:16px;
+font-weight: 100;
+color:#444;
+}
+#search_table input:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+#search_table input:focus:-moz-placeholder {
+	color:transparent;
+	 }
+	#search_table input:focus::-moz-placeholder {
+		color:transparent;
+	}
+	#search_table input:focus:-ms-input-placeholder {
+	color:transparent;
+	 }
+
 #search_bar{
 	width:420px;
 	height:65px;
@@ -237,3 +263,164 @@ border-radius: 50%;
 #image_cache_div{
 	display: none;
 }
+
+#spot_circle{
+	background-color: #ffe91a;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 92px;
+}
+
+#spot_circle p{
+	font-size: 30px;
+	text-align: center;
+	vertical-align: middle;
+	font-family:sans-serif;
+	color:#333333;
+}
+
+
+
+/* GRID VIEW */
+
+#grid_search_table input::-webkit-input-placeholder {
+font-family: sans-serif;
+font-size:12px;
+font-weight: 100;
+color:#aaa;
+padding-left:30px;
+}
+#grid_search_table input:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+
+	/* GNAVI */
+	.gnavi_grid{
+		width: 1150px;
+		height:148px;
+		background-image:url('../imgs/gnavi_grid.png');
+	}
+	.gnavi_grid a{
+		color:rgba(0, 0, 0, 0.5);
+	}
+
+	.gnavi_grid ul{
+		padding:0;
+		list-style: none;
+		float:left;
+	}
+	.gnavi_grid ul li ul{
+		margin-top:20px;
+		position: absolute;
+		z-index: 999;
+		margin-left:22px;
+		margin-top:40px;
+
+	}
+	.gnavi_grid ul li ul li{
+		width:441px;
+		height:65px;
+		list-style: none;
+		background-color: #000;
+		margin-top:-16px;
+		border-bottom: solid 2px #7eb42f;
+		background-image: url('../imgs/dropdown_arrow.png');
+		background-repeat: no-repeat;
+		background-position: 49px;
+		visibility: hidden;
+	}
+	.gnavi_grid ul li ul li:hover{
+		background-color: #7eb42f;
+		background-image: url('../imgs/dropdown_arrow_hover.png');
+		background-repeat: no-repeat;
+		background-position: 49px;
+	}
+	.gnavi_grid li p{
+	font-family: sans-serif;
+	font-size: 16px;
+	color:#fff;
+	margin-left:120px;
+	padding-top:22px;
+	}
+	.gnavi_grid ul:hover li{
+	visibility: visible;
+	}
+
+/* 	CONTENTS */
+.grid_contents:before{
+	content:"";
+	width:76px;
+	height:1130px;
+	display: inline-block;
+	background-image: url('../imgs/slant_bar.png');
+	background-repeat: no-repeat;
+	float:left;
+}
+.grid_contents:after{
+	content:"";
+	width:76px;
+	height:1130px;
+	display: inline-block;
+	background-image: url('../imgs/slant_bar.png');
+	background-repeat: no-repeat;
+	float:right;
+	margin-top:-220px;
+}
+.title{
+	height:120px;
+	padding-top:50px;
+	margin-left:125px;
+}
+.title_h1{
+	font-size: 30px;
+	font-family: sans-serif;
+	float:left;
+
+	}
+	.viewall{
+		font-size: 12px;
+			font-family: sans-serif;
+			color: #333;
+			text-decoration: underline;
+			float:left;
+			margin-top:40px;
+			margin-left: 166px;
+	}
+	.viewall:after{
+		content:"";
+		width:14px;
+		height:130px;
+		display: inline-block;
+		background-image: url('../imgs/viewall_arrow.png');
+		background-repeat: no-repeat;
+		float:right;
+	}
+	#grid_search_table{
+		float:left;
+	}
+#grid_search_bar{
+		margin-top:20px;
+		margin-left:44px;
+		height:45px;
+		width:450px;
+		border-radius: 50px;
+		border: solid #aaa 1px;
+
+	}
+	#grid_search_bar:focus{
+outline:0;
+		}
+		#search_small{
+			margin-top:15px;
+		}
+		#search_small:hover{
+			width:54px;
+			height:54px;
+			background-color: #efffee;
+			border-radius: 50%;
+		}
+		#placeholder{
+
+		}

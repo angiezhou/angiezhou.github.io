@@ -17,14 +17,18 @@
 	<div class="wrap">
 		<div class="gnavi">
 		<a href="index.html" class="logo_btn"><img src="imgs/transparent.png" alt="..."></a>
-		<a href="#" class="dropdown_btn"><img src="imgs/transparent.png" alt="..."></a>
-		<ul>
+
+	<ul>
+	<li>	<a href="#" class="dropdown_btn"><img src="imgs/transparent.png" alt="..."></a></li>
+	<li><ul class="trend_dropdown">
 			<li><p>イチオシサービス</p></li>
 			<li><p>イ今すぐ遊べるサービス</p></li>
 			<li><p>もうすぐ遊べるサービス</p></li>
-		</ul>
+		</ul></li>
+	</ul>
+
 		<a href="key_view.html"class="key_view_btn"><img src="imgs/transparent.png" alt="..."></a>
-		<a href="#"class="grid_view_btn"><img src="imgs/transparent.png" alt="..."></a>
+		<a href="grid_view.html"class="grid_view_btn"><img src="imgs/transparent.png" alt="..."></a>
 		</div>
 <div class="contents">
 <div class="big_img">
@@ -32,38 +36,39 @@
 </div>
 <div class="keyboard">
 	<ul class="key_line01">
-		<li><img src="imgs/keys/q.png" alt="q"></li>
-		<li><img src="imgs/keys/w.png" alt="w"></li>
-		<li><img src="imgs/keys/e.png" alt="e"></li>
-		<li><img src="imgs/keys/r.png" alt="r"></li>
-		<li><img src="imgs/keys/t.png" alt="t"></li>
-		<li><img src="imgs/keys/y.png" alt="y"></li>
-		<li><img src="imgs/keys/u.png" alt="u"></li>
-		<li><img src="imgs/keys/i.png" alt="i"></li>
-		<li><img src="imgs/keys/o.png" alt="o"></li>
-		<li><img src="imgs/keys/p.png" alt="p"></li>
+		<li><img src="imgs/keys/q.png" id="img_key_16" alt="q"></li>
+		<li><img src="imgs/keys/w.png" id="img_key_22" alt="w"></li>
+		<li><img src="imgs/keys/e.png" id="img_key_4" alt="e"></li>
+		<li><img src="imgs/keys/r.png" id="img_key_17" alt="r"></li>
+		<li><img src="imgs/keys/t.png" id="img_key_19" alt="t"></li>
+		<li><img src="imgs/keys/y.png" id="img_key_24" alt="y"></li>
+		<li><img src="imgs/keys/u.png" id="img_key_20" alt="u"></li>
+		<li><img src="imgs/keys/i.png" id="img_key_8" alt="i"></li>
+		<li><img src="imgs/keys/o.png" id="img_key_14" alt="o"></li>
+		<li><img src="imgs/keys/p.png" id="img_key_15" alt="p"></li>
 	</ul>
 
 	<ul class="key_line02">
-		<li><img src="imgs/keys/a.png" alt="a"></li>
-		<li><img src="imgs/keys/s.png" alt="s"></li>
-		<li><img src="imgs/keys/d.png" alt="d"></li>
-		<li><img src="imgs/keys/f.png" alt="f"></li>
-		<li><img src="imgs/keys/g.png" alt="g"></li>
-		<li><img src="imgs/keys/h.png" alt="h"></li>
-		<li><img src="imgs/keys/j.png" alt="j"></li>
-		<li><img src="imgs/keys/k.png" alt="k"></li>
-		<li><img src="imgs/keys/l.png" alt="l"></li>
+		<li><img src="imgs/keys/a.png" id="img_key_0" alt="a"></li>
+		<li><img src="imgs/keys/s.png" id="img_key_18" alt="s"></li>
+		<li><img src="imgs/keys/d.png" id="img_key_3" alt="d"></li>
+		<li><img src="imgs/keys/f.png" id="img_key_5" alt="f"></li>
+		<li><img src="imgs/keys/g.png" id="img_key_6" alt="g"></li>
+		<li><img src="imgs/keys/h.png" id="img_key_7" alt="h"></li>
+		<li><img src="imgs/keys/j.png" id="img_key_9" alt="j"></li>
+		<li><img src="imgs/keys/k.png" id="img_key_10" alt="k"></li>
+		<li><img src="imgs/keys/l.png" id="img_key_11" alt="l"></li>
 	</ul>
 	<ul class="key_line03">
-		<li><img src="imgs/keys/z.png" alt="z"></li>
-		<li><img src="imgs/keys/x.png" alt="x"></li>
-		<li><img src="imgs/keys/c.png" alt="c"></li>
-		<li><img src="imgs/keys/v.png" alt="v"></li>
-		<li><img src="imgs/keys/b.png" alt="b"></li>
-		<li><img src="imgs/keys/n.png" alt="n"></li>
-		<li><img src="imgs/keys/m.png" alt="m"></li>
+		<li><img src="imgs/keys/z.png" id="img_key_25" alt="z"></li>
+		<li><img src="imgs/keys/x.png" id="img_key_23" alt="x"></li>
+		<li><img src="imgs/keys/c.png" id="img_key_2" alt="c"></li>
+		<li><img src="imgs/keys/v.png" id="img_key_21" alt="v"></li>
+		<li><img src="imgs/keys/b.png" id="img_key_1" alt="b"></li>
+		<li><img src="imgs/keys/n.png" id="img_key_13" alt="n"></li>
+		<li><img src="imgs/keys/m.png" id="img_key_12" alt="m"></li>
 	</ul>
+	<div id="spot_circle"><p></p></div>
 	<div class="key_line04">
 <img src="imgs/keys/lang.png" alt="langkey" id="lang_key">
 
@@ -76,7 +81,7 @@
 
 		<input id="searchkey_show"type="image" value="Search" src="imgs/keys/search_key.png">
 		<input id="searchkey_hide" value="Hide Table" type="image" src="imgs/keys/search_key.png">
-		<div id="search_table"><input name="Search_Country" id="search_bar"  type="text"></div>
+		<div id="search_table"><input name="Search_Country" id="search_bar"  type="text" placeholder="サービス名 / キーワードを入力してる検索"></div>
 			<script>
 			$( function(){
 				$("#search_table").hide();
@@ -97,15 +102,32 @@
 			});
 			</script>
 			<!-- SEARCH BTN PRESS TOGGLE SEARCH BAR END -->
-
+			<!-- KEYBOARD ACTION -->
         <script type="text/javascript">
-            $(document).keyup(function(e){
+            $(document).keydown(function(e){
+				var keyList = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
                 var index = e.keyCode - 65;
+				var img_id = "img_key_"+index;
 
-                var img_list = $("#image_cache_div").find('img');
-                $('#main_img').attr("src",img_list[index].src);
+				//update image src
+				var img_list = $("#image_cache_div").find('img');
+				$('#main_img').attr("src",img_list[index].src);
+
+				//generate spot
+				var old_badge_position = $("#"+img_id).position();
+
+				$('#spot_circle').css("height", $("#"+img_id).css("height"));
+				$('#spot_circle').css("width"  , $("#"+img_id).css("width"));
+				$('#spot_circle').css("top", old_badge_position.top);
+				$('#spot_circle').css("left", old_badge_position.left);
+				$('#spot_circle').show();
+				var title_p = $('#spot_circle').children("p")[0];
+				title_p.innerHTML = keyList.substr(index,1);
+
+				$('#spot_circle').animate({'top':old_badge_position.top - 230}, 200);
             });
         </script>
+				<!-- KEYBOARD ACTION END-->
 </div>
 </div>
 </div>
