@@ -15,11 +15,20 @@
 
 <body>
 	<div class="wrap">
-<div class="gnavi">
-</div>
+		<div class="gnavi">
+		<a href="index.html" class="logo_btn"><img src="imgs/transparent.png" alt="..."></a>
+		<a href="#" class="dropdown_btn"><img src="imgs/transparent.png" alt="..."></a>
+		<ul>
+			<li><p>イチオシサービス</p></li>
+			<li><p>イ今すぐ遊べるサービス</p></li>
+			<li><p>もうすぐ遊べるサービス</p></li>
+		</ul>
+		<a href="key_view.html"class="key_view_btn"><img src="imgs/transparent.png" alt="..."></a>
+		<a href="#"class="grid_view_btn"><img src="imgs/transparent.png" alt="..."></a>
+		</div>
 <div class="contents">
 <div class="big_img">
-	<img src="imgs/g_img.png" alt="g">
+	<img id="main_img" src="imgs/g_img.png" alt="g">
 </div>
 <div class="keyboard">
 	<ul class="key_line01">
@@ -70,7 +79,6 @@
 		<div id="search_table"><input name="Search_Country" id="search_bar"  type="text"></div>
 			<script>
 			$( function(){
-
 				$("#search_table").hide();
 				$("#searchkey_hide").hide();
 
@@ -89,6 +97,15 @@
 			});
 			</script>
 			<!-- SEARCH BTN PRESS TOGGLE SEARCH BAR END -->
+
+        <script type="text/javascript">
+            $(document).keyup(function(e){
+                var index = e.keyCode - 65;
+
+                var img_list = $("#image_cache_div").find('img');
+                $('#main_img').attr("src",img_list[index].src);
+            });
+        </script>
 </div>
 </div>
 </div>
@@ -106,6 +123,35 @@
 </footer>
 </div>
 
+    <div id="image_cache_div">
+        <img src="imgs/a_img.png" alt="a">
+        <img src="imgs/b_img.png" alt="b">
+        <img src="imgs/c_img.png" alt="c">
+        <img src="imgs/d_img.png" alt="d">
+        <img src="imgs/e_img.png" alt="e">
+        <img src="imgs/f_img.png" alt="f">
+        <img src="imgs/g_img.png" alt="g">
+        <img src="imgs/h_img.png" alt="h">
+        <img src="imgs/i_img.png" alt="i">
+        <img src="imgs/j_img.png" alt="j">
+        <img src="imgs/k_img.png" alt="k">
+        <img src="imgs/l_img.png" alt="l">
+        <img src="imgs/m_img.png" alt="m">
+        <img src="imgs/n_img.png" alt="n">
+        <img src="imgs/o_img.png" alt="o">
+        <img src="imgs/p_img.png" alt="p">
+        <img src="imgs/q_img.png" alt="q">
+        <img src="imgs/r_img.png" alt="r">
+        <img src="imgs/s_img.png" alt="s">
+        <img src="imgs/t_img.png" alt="t">
+        <img src="imgs/u_img.png" alt="u">
+        <img src="imgs/v_img.png" alt="v">
+        <img src="imgs/w_img.png" alt="w">
+        <img src="imgs/x_img.png" alt="x">
+        <img src="imgs/y_img.png" alt="y">
+        <img src="imgs/z_img.png" alt="z">
+
+    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
