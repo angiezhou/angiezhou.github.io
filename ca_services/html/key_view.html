@@ -4,17 +4,11 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="東京ベーサイドホテル">
-<meta name="Keyword" content="東京ベーサイドホテル">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<meta name="description" content="CYBERAGENT SERVICES">
+<meta name="Keyword" content="CYBERAGENT SERVICES">
 <link type="text/css" rel="stylesheet" href="./css/style.css">
-<link type="text/css" rel="stylesheet" href="./css/lightbox.css">
-<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="./js/lightbox.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <title>CYBERAGENT SERVICES</title>
 </head>
 
@@ -63,8 +57,38 @@
 	</ul>
 	<div class="key_line04">
 <img src="imgs/keys/lang.png" alt="langkey" id="lang_key">
+
+
 <img src="imgs/keys/space_key.png" alt="spacekey" id="space_key">
-<img src="imgs/keys/search_key.png" alt="searchkey" id="search_key">
+
+
+<!-- SEARCH BTN PRESS TOGGLE SEARCH BAR -->
+
+
+		<input id="searchkey_show"type="image" value="Search" src="imgs/keys/search_key.png">
+		<input id="searchkey_hide" value="Hide Table" type="image" src="imgs/keys/search_key.png">
+		<div id="search_table"><input name="Search_Country" id="search_bar"  type="text"></div>
+			<script>
+			$( function(){
+
+				$("#search_table").hide();
+				$("#searchkey_hide").hide();
+
+				$("#searchkey_show").click( function(event){
+					$("#search_table").show(80);
+					$("#searchkey_show").hide();
+					$("#searchkey_hide").show();
+				});
+
+				$("#searchkey_hide").click( function(event){
+					$("#search_table").hide(80);
+					$("#searchkey_hide").hide();
+					$("#searchkey_show").show();
+				});
+
+			});
+			</script>
+			<!-- SEARCH BTN PRESS TOGGLE SEARCH BAR END -->
 </div>
 </div>
 </div>
@@ -83,7 +107,7 @@
 </div>
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 
 </html>

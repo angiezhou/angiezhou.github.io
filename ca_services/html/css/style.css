@@ -126,3 +126,38 @@ footer small{
 	color:#aaaaaa;
 	margin-left:445px;
 }
+
+/* SEARCH */
+#space_key{
+	z-index: -1;
+}
+#search_bar{
+	width:420px;
+	height:65px;
+	margin-top:0px;
+	background-color: #111;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom: 2px solid #fff;
+	margin-top:-1px;
+	margin-top:-800px;
+	color:#fff;
+	font-size: 16px;
+}
+#search_table{
+	margin-top:-65px;
+	margin-left:160px;
+}
+#search_bar:focus{
+outline:0;
+}
+#searchkey_show:hover,#searchkey_hide:hover{
+	outline:0;
+	background-color: rgba(255, 255, 255, 0.1);
+	width: 90px;
+height: 90px;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+}
