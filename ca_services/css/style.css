@@ -35,7 +35,7 @@ padding-left:392px;
 	margin-top:30px;
 }
 .enterpg_view_seperator li:last-child{
-	margin-left:20px;
+	margin-left:50px;
 }
 
 
@@ -421,6 +421,18 @@ outline:0;
 			background-color: #efffee;
 			border-radius: 50%;
 		}
-		#placeholder{
 
-		}
+
+
+		/* POPUP */
+
+#popupbgimg{
+	width:1150px;
+	height:1507px;
+	background-image: url('../imgs/CA_service_pc-01-popup.png');
+	background-repeat: no-repeat;
+}
+#closebtn{
+	margin-left:820px;
+
+}
