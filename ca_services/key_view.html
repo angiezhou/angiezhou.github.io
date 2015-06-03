@@ -16,19 +16,31 @@
 <body>
 	<div class="wrap">
 		<div class="gnavi">
-		<a href="index.html" class="logo_btn"><img src="imgs/transparent.png" alt="..."></a>
+			<div class="gnavi_leftroll">
+				<a href="index.html" class="logo"><img src="imgs/logo.png" alt="logo"></a>
+				<a href="#0" class="cd-filter-trigger"><p class="filter_text">フィルター / FILTERS</p></a>
+			</div>
+			<div class="gnavi_rightroll">
+				<ul>
+					<li><input type="button" value="keyview" onclick="location.href='key_view.html'"></li>
+					<li><input type="button" value="gridview" onclick="location.href='grid_view.html'"></li>
+					<li><input type="button" value="solarview" onclick="location.href='solar_view.html'"></li>
+				</ul>
+			</div>
+			<div class="lang_filter">
+			<div class="filterbox">
+						<input type="radio" name="filter" id="filter_1" value="1" checked="checked" />
+						<label for="filter_1" data-label="JP">JP</label>
+						<input type="radio" name="filter" id="filter_0" value="0" />
+						<label for="filter_0" data-label="EN">EN</label>
+					</div>
+			</div>
+			<form role="search" method="get" class="search_form">
+			<label>
+					<input type="search" class="search_field"  value="" name="s" title="Search for:" />
+			</label>
+	</form>
 
-	<ul>
-	<li>	<a href="#" class="dropdown_btn"><img src="imgs/transparent.png" alt="..."></a></li>
-	<li><ul class="trend_dropdown">
-			<li><p>イチオシサービス</p></li>
-			<li><p>イ今すぐ遊べるサービス</p></li>
-			<li><p>もうすぐ遊べるサービス</p></li>
-		</ul></li>
-	</ul>
-
-		<a href="key_view.html"class="key_view_btn"><img src="imgs/transparent.png" alt="..."></a>
-		<a href="grid_view.html"class="grid_view_btn"><img src="imgs/transparent.png" alt="..."></a>
 		</div>
 <div class="contents">
 <div class="big_img">
@@ -132,16 +144,24 @@
 </div>
 </div>
 <footer>
+	<div class="footer_leftroll">
 	<img src="imgs/footer_logo.png" alt="footerlogo" class="footer_logo">
-	<ul>
+	<p><small>Copyright © CyberAgent, Inc. All Rights Reserved.</small></p>
+</div>
+<div class="footer_rightroll">
+	<ul class="sns_icon">
+		<li><a href="#"><img src="imgs/fb_icon.png" alt="facebook"></a></li>
+		<li><a href="#"><img src="imgs/t_icon.png" alt="twitter"></a></li>
+		<li><a href="#"><img src="imgs/ameba_icon.png" alt="ameba"></a></li>
+	</ul>
+	<ul class="footer_links">
 		<li><a href="#">サイトマップ</a></li>
 		<li><a href="#">プライバシーポリシー</a></li>
 		<li><a href="#">ディスクロージャーポリシーサイト</a></li>
 		<li><a href="#">ご利用方法</a></li>
 		<li><a href="#">免責事項</a></li>
 	</ul>
-	<br>	<br>
-	<p><small>Copyright © CyberAgent, Inc. All Rights Reserved.</small></p>
+</div>
 </footer>
 </div>
 

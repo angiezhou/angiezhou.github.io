@@ -9,46 +9,247 @@
 <link type="text/css" rel="stylesheet" href="./css/style.css">
 <script type="text/javascript" src="./js/lightbox.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
 <title>CYBERAGENT SERVICES</title>
 </head>
 
 
 <body>
 	<div class="wrap">
-		<div class="gnavi_grid">
-		<a href="index.html" class="logo_btn"><img src="imgs/transparent.png" alt="..."></a>
-	<ul>
-	<li>	<a href="#" class="dropdown_btn"><img src="imgs/transparent.png" alt="..."></a></li>
-	<li><ul class="trend_dropdown">
-			<li><p>イチオシサービス</p></li>
-			<li><p>イ今すぐ遊べるサービス</p></li>
-			<li><p>もうすぐ遊べるサービス</p></li>
-		</ul></li>
-	</ul>
-		<a href="key_view.html"class="key_view_btn"><img src="imgs/transparent.png" alt="..."></a>
-		<a href="grid_view.html"class="grid_view_btn"><img src="imgs/transparent.png" alt="..."></a>
+		<div class="gnavi">
+			<div class="gnavi_leftroll">
+				<a href="index.html" class="logo"><img src="imgs/logo.png" alt="logo"></a>
+				<a href="#0" class="cd-filter-trigger"><p class="filter_text">フィルター / FILTERS</p></a>
+			</div>
+			<div class="gnavi_rightroll">
+				<ul>
+					<li><input type="button" value="keyview" onclick="location.href='key_view.html'"></li>
+					<li><input type="button" value="gridview" onclick="location.href='grid_view.html'"></li>
+					<li><input type="button" value="solarview" onclick="location.href='solar_view.html'"></li>
+				</ul>
+			</div>
+			<div class="lang_filter">
+			<div class="filterbox">
+						<input type="radio" name="filter" id="filter_1" value="1" checked="checked" />
+						<label for="filter_1" data-label="JP">JP</label>
+						<input type="radio" name="filter" id="filter_0" value="0" />
+						<label for="filter_0" data-label="EN">EN</label>
+					</div>
+			</div>
+			<form role="search" method="get" class="search_form">
+			<label>
+					<input type="search" class="search_field"  value="" name="s" title="Search for:" />
+			</label>
+	</form>
+
 		</div>
 
-<div class="grid_contents">
 
-	<section class="title">
-		<h1 class="title_h1">サービス</h1>
-		<a href="#" class="viewall">VIEW ALL</a>
-		<div id="grid_search_table"><input name="Search_Country" id="grid_search_bar"  type="text" placeholder="サービス名 / キーワードを入力してる検索"></div>
-		<input id="search_small"type="image" value="Search" src="imgs/search_small.png">
+		<section class="title">
+			<h1 class="title_h1">サービス</h1>
+			<a href="#" class="viewall">VIEW ALL</a>
 
-	</section>
+		</section>
+
+		<div class="contents">
+
+<div class="contents_left">
+<a href="#"><img src="imgs/img_001.png" alt="..."></a>
+<section class="campaign_info">
+<h1>グランブルーファンタジー</h1>
+<h2>君と紡ぐ、空の物語</h2>
+<a href="#" class="moreinfo">サービス詳細へ</a>
+<p>サウンドディレクター植松伸夫、キャラクターデザイン皆葉英夫。王道RPGを作り上げてきたメンバーが送る、想像を超えるクオリティの本格スマホRPG。</p>
+<img src="imgs/game_tag.png" alt="game" class="game_tag">
+<ul class="platform_icon">
+	<li><a href="#"><img src="imgs/ios_icon.png" alt="ios"></a></li>
+	<li><a href="#"><img src="imgs/android_icon.png" alt="android"></a></li>
+	<li><a href="#"><img src="imgs/ameba_icon_s.png" alt="ameba"></a></li>
+</ul>
+</section>
+<section class="news">
+<h2>お知らせ</h2>
+<a href="#" class="moreinfo">VIEW ALL</a>
+<hr>
+<ul class="news_contents">
+	<li>
+		<ul>
+			<li><img src="imgs/grid_news01.png" alt="news01"></li>
+			<li><a href="#"><span class="news_date">2015.05.25</span><br>アニメ版「ガールフレンド（仮）」DVD特典イベント「聖櫻学園　真夏の音楽祭2015」 第3弾ゲスト発表で佐藤利奈さんのMC....»</a></li>
+			</ul>
+	</li>
+	<br>
+	<li>
+		<ul>
+			<li><img src="imgs/grid_news01.png" alt="news01"></li>
+			<li><a href="#"><span class="news_date">2015.05.25</span><br>アニメ版「ガールフレンド（仮）」DVD特典イベント「聖櫻学園　真夏の音楽祭2015」 第3弾ゲスト発表で佐藤利奈さんのMC....»</a></li>
+			</ul>
+	</li>
+	<br>
+	<li>
+		<ul>
+			<li><img src="imgs/grid_news01.png" alt="news01"></li>
+			<li><a href="#"><span class="news_date">2015.05.25</span><br>アニメ版「ガールフレンド（仮）」DVD特典イベント「聖櫻学園　真夏の音楽祭2015」 第3弾ゲスト発表で佐藤利奈さんのMC....»</a></li>
+			</ul>
+	</li>
 
 
-<img src="imgs/CA_service_pc_13.png" alt="..." id="placeholder">
+</ul>
+
+
+</section>
+
 
 
 
 </div>
 
+<div class="contents_right">
+
+	<main class="cd-main-content">
+
+
+		<section class="cd-gallery">
+			<ul>
+				<li class="mix color-1 check1 radio2 option3"><img src="imgs/img_btn_001.png" alt="Image 1"></li>
+				<li class="mix color-2 check2 radio2 option2"><img src="imgs/img_btn_002.png" alt="Image 2"></li>
+				<li class="mix color-1 check3 radio3 option1"><img src="imgs/img_btn_003.png" alt="Image 3"></li>
+				<li class="mix color-1 check3 radio2 option4"><img src="imgs/img_btn_004.png" alt="Image 4"></li>
+				<li class="mix color-1 check1 radio3 option2"><img src="imgs/img_btn_001.png" alt="Image 5"></li>
+				<li class="mix color-2 check2 radio3 option3"><img src="imgs/img_btn_002.png" alt="Image 6"></li>
+				<li class="mix color-2 check2 radio2 option1"><img src="imgs/img_btn_003.png"  alt="Image 7"></li>
+				<li class="mix color-1 check1 radio3 option4"><img src="imgs/img_btn_004.png"  alt="Image 8"></li>
+				<li class="mix color-2 check1 radio2 option3"><img src="imgs/img_btn_001.png"  alt="Image 9"></li>
+				<li class="mix color-1 check3 radio2 option4"><img src="imgs/img_btn_002.png"  alt="Image 10"></li>
+				<li class="mix color-1 check3 radio3 option2"><img src="imgs/img_btn_003.png"  alt="Image 11"></li>
+				<li class="mix color-2 check1 radio3 option1"><img src="imgs/img_btn_004.png"  alt="Image 12"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>トレンド別</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">VIEW ALL</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">今すぐ遊べるサービス</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">もうすぐ遊べるサービス</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				<hr>
+				<div class="cd-filter-block">
+					<h4>カテゴリー別</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox4">
+								<label class="checkbox-label" for="checkbox4">ゲーム</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="checkbox5">コミュニティー</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox6">
+							<label class="checkbox-label" for="checkbox6">キュレーション</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox7">
+							<label class="checkbox-label" for="checkbox7">AMEBA PIGG</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				<div class="cd-filter-block">
+					<h4>デバイス別</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".check1" type="checkbox" id="checkbox8">
+								<label class="checkbox-label" for="checkbox8">パソコン</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check2" type="checkbox" id="checkbox9">
+							<label class="checkbox-label" for="checkbox9">IPHONE</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".check3" type="checkbox" id="checkbox10">
+							<label class="checkbox-label" for="checkbox10">ANDROID</label>
+						</li>
+
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+			</form>
+
+			<a href="#0" class="cd-close"></a>
+		</div> <!-- cd-filter -->
+
+
+	</main> <!-- cd-main-content -->
+	</div>
 
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+	<div class="footer_leftroll">
+	<img src="imgs/footer_logo.png" alt="footerlogo" class="footer_logo">
+	<p><small>Copyright © CyberAgent, Inc. All Rights Reserved.</small></p>
+</div>
+<div class="footer_rightroll">
+	<ul class="sns_icon">
+		<li><a href="#"><img src="imgs/fb_icon.png" alt="facebook"></a></li>
+		<li><a href="#"><img src="imgs/t_icon.png" alt="twitter"></a></li>
+		<li><a href="#"><img src="imgs/ameba_icon.png" alt="ameba"></a></li>
+	</ul>
+	<ul class="footer_links">
+		<li><a href="#">サイトマップ</a></li>
+		<li><a href="#">プライバシーポリシー</a></li>
+		<li><a href="#">ディスクロージャーポリシーサイト</a></li>
+		<li><a href="#">ご利用方法</a></li>
+		<li><a href="#">免責事項</a></li>
+	</ul>
+</div>
+</footer>
+</div>
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 
 </body>
 
