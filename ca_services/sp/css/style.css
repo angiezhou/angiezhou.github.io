@@ -4,8 +4,6 @@
 body{
   zoom:0.5;
   overflow-x: hidden;
-  width:100%
-  margin:auto;
 }
 input:focus,a:focus,select:focus{
   outline: 0;
