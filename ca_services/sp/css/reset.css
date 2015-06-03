@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* =================================================
+ * reset
+ * ================================================*/
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p,
+header, hgroup, section, article, aside, hgroup, footer, figure, figcaption, nav {
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+}
+
+body {
+	line-height: 100%;
+	-webkit-text-size-adjust: none;
+}
+
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+img {
+	border: 0px;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+table {
+	border-spacing: 0px;
+	empty-cells: show;
+}

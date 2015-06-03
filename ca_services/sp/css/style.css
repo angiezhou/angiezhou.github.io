@@ -1,0 +1,358 @@
+
+
+/* DEFAULT SETTINGS */
+body{
+  zoom:0.5;
+  overflow-x: hidden;
+}
+input:focus,a:focus,select:focus{
+  outline: 0;
+}
+input:focus::-webkit-input-placeholder {
+	color:transparent;
+}
+input:focus:-moz-placeholder {
+	color:transparent;
+	 }
+input:focus::-moz-placeholder {
+		color:transparent;
+	}
+input:focus:-ms-input-placeholder {
+	color:transparent;
+	 }
+img{
+  max-width:100%;
+  height:auto;
+  }
+  .site-wrap {
+      min-width: 100%;
+      min-height: 100%;
+      background-color: #fff;
+      position: relative;
+      top: 0;
+      bottom: 100%;
+      left: 0;
+      z-index: 1;
+  }
+
+
+/* HEADER */
+.headerul01{
+  margin-top:30px;
+  float:left;
+}
+.headerul01 li{
+  border-bottom:2px #ccc solid;
+  border-right:2px #ccc solid;
+  width:500px;
+  height:90px;
+  padding-left:40px;
+
+}
+header input{
+background-color: #fff;
+border:none;
+font-size:24px;
+padding-top: 26px;
+width:450px;
+}
+.headerul02{
+  padding-top:30px;
+}
+.headerul02 li{
+  border-left:2px #ccc solid;
+  border-bottom:2px #ccc solid;
+  height:90px;
+}
+.headerul02 li img{
+padding-top:20px;
+padding-left:20px;
+}
+
+/* MENU */
+
+.navigation {
+    list-style: none;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    overflow-y:hidden;
+}
+.nav-trigger {
+    position: fixed;
+    clip: rect(0, 0, 0, 0);
+}
+label[for="nav-trigger"] {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+label[for="nav-trigger"] {
+    /* ... previous styles here... */
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-image: url("../imgs/menu_btn.png");
+    background-size: contain;
+    margin-left:546px;
+    margin-top:34px;
+}
+.nav-trigger:checked + label {
+    left: 640px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    left: 640px;
+}
+.nav-trigger + label, .site-wrap {
+    transition: right 0.2s;
+}
+.close {
+  cursor: pointer;
+  color: #ccc;
+  text-align: right;
+  width: 640px;
+  height: 100px;
+  padding-right: 40px;
+  padding-top:20px;
+  font-size:60px;
+  display: block;
+  top: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  position: relative;
+  }
+
+.navigation li{
+    height:80px;
+    border-bottom: 2px #ccc solid;
+    text-align: center;
+    padding-top:80px;
+  }
+  .navigation li:first-child{
+      height:50px;
+      border-bottom: 2px #ccc solid;
+      text-align: center;
+      padding-top:0px;
+    }
+    .navigation li a{
+      text-decoration: none;
+      font-size: 30px;
+      color: #111;
+      font-family: sans-serif;
+    }
+    .navigation select{
+      margin-left: 20px;
+      margin-top: -100px;
+      padding-left:20px;
+      -webkit-appearance: none;
+      width:560px;
+      height:76px;
+      border:2px #ccc solid;
+      background-color: #fff;
+      background-image: url('../imgs/downbtn.png');
+      background-position: 500px;
+      background-repeat: no-repeat;
+      font-size: 24px;
+      font-family: sans-serif;
+      color:#ccc;
+    }
+
+.navigation li img{
+  margin-top:-48px;
+}
+
+
+/* MAIN */
+
+.campaign h2{
+  height:180px;
+  background-color: #333;
+
+}
+.campaign h2 p{
+  padding-top:50px;
+
+  padding-left:40px;
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight:normal;
+  color:#fff;
+}
+.subtitle{
+  padding-top: 46px;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight:normal;
+  color:#fff;
+  float:left;
+}
+.campaign h2 p img{
+  padding-top:24px;
+  padding-left:30px;
+}
+
+/* CATEGORY NAVI */
+.category{
+border:0;
+  border-bottom: 10px #111 solid;
+}
+
+/* SERVICES LISTUP */
+.listup h2, .news h2{
+  height:100px;
+  font-family: sans-serif;
+  font-size: 45px;
+    text-align: center;
+    padding-top:80px;
+    border-bottom: 6px #ccc double;
+}
+.services{
+  background-color: #f4f4f4;
+  padding-bottom: 100px;
+}
+.services table{
+  padding-top:80px;
+  padding-bottom: 80px;
+  width:640px;
+  padding-left:40px;
+}
+.services tr{
+  height:520px;
+}
+.viewall{
+  padding-left:186px;
+}
+
+
+/* NEWS */
+.news ul{
+  padding-bottom:50px;
+  padding-top:20px;
+}
+.news ul li ul{
+  margin-top:60px;
+}
+.news ul li ul li:first-child{
+  float:left;
+  padding-left:40px;
+  padding-top:14px;
+}
+.news ul li ul li:last-child{
+  margin-left:220px;
+  text-align: justify;
+  width:380px;
+}
+
+
+.news ul li ul li a{
+
+  text-decoration: underline;
+  font-size: 24px;
+  font-family: sans-serif;
+  color:#aaa;
+  line-height: 40px;
+}
+.date{
+  font-style: italic;
+  font-weight: lighter;
+  color:#ccc;
+  }
+
+
+
+.totop{
+  margin-left:500px;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer h1{
+  margin-top:60px;
+  width:100%;
+  height:150px;
+  display: block;
+  border-bottom: 6px double #ccc;
+}
+footer h1 a{
+  padding-left:25%;
+}
+
+footer select{
+  margin-left: 40px;
+  margin-top:70px;
+  margin-bottom:70px;
+  padding-left:50px;
+  -webkit-appearance: none;
+  width:560px;
+  height:76px;
+  border:2px #ccc solid;
+  background-color: #fff;
+  background-image: url('../imgs/downbtn.png');
+  background-position: 500px;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  font-family: sans-serif;
+  color:#ccc;
+}
+
+.footer_links ul li{
+padding-top:50px;
+ border-top: 2px #ccc solid;
+  text-align: center;
+  height:70px;
+  }
+.footer_links ul li:last-child{
+   border-top: 2px #ccc solid;
+   border-bottom:6px double #ccc;
+    }
+
+.footer_links ul li a{
+  font-size: 24px;
+  font-family: sans-serif;
+  color:#ccc;
+  text-decoration: none;
+}
+.pcorsp{
+  height:320px;
+  border-bottom:6px double #ccc;
+}
+.pcorsp ul{
+  padding-top:60px;
+}
+
+.pcorsp li{
+  float:left;
+  width:318px;
+  border-right: 2px #7bac33 solid;
+  height:180px;
+}
+.pcorsp li img{
+padding-left:70px;
+}
+.pcorsp li:last-child{
+  border:none;
+}
+footer h5{
+  height:120px;
+  padding-top:100px;
+  padding-left:90px;
+  font-size:20px;
+  color:#aaa;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
