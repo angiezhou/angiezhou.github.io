@@ -695,7 +695,7 @@ border-radius:18px;
 	margin-left:470px;
 	background-color: #f4f4f4;
 }
-.contents:after {
+.contents_grid:after {
 	content:"";
 	background-image: url('../imgs/slant_bar.png');
 	width:75px;
